@@ -54,66 +54,56 @@ int main(void)
     // hw.DelayMs(2000);
     
     // hw.PrintLine("Serial Logger initialized!");
-
+    bool last_button_state = true;
     while(1)
     {
         bool current_button_state = my_button.Read();
         // hw.PrintLine("Logger is enabled");
         hw.PrintLine("Button State: %s", current_button_state ? "true" : "false");
         // Check button state
-        
-        if (current_button_state == 0 )
-        {
-            hw.SetLed(true);
-            // hw.PrintLine("Button pressed ");
-
-            // Button pressed
-            // button_pressed = true;
-            //  MidiEvent midi1;
-            // // Initialize MIDI message for Note On
-            // // MidiEvent midi1;
-            // midi1.type = NoteOn;
-            // midi1.channel = 0;
-            // midi1.data[0] = 60; // middle C
-            // midi1.data[1] = 100; // velocity
-            // MidiMessage midi1 = MidiMessage::NoteOn(60, 100);
-            // midi.SendMessage(midi1);
-            uint8_t note_on[3] = {0x90, 60, 100};  // 0x90 = Note On channel 0, middle C, velocity 100
-            if (useSerialLogger) {
-                hw.Print("Midi message is: ");
-                for (int i = 0; i < 3; i++) {
-                    hw.Print("%d ", note_on[i]);
+        if (current_button_state != last_button_state){
+            hw.DelayMs(1);
+            current_button_state = my_button.Read(); // read again to 
+            if (current_button_state == 0) {
+                hw.SetLed(true);
+                // hw.PrintLine("Button pressed ");
+                uint8_t note_on[3] = {0x90, 60, 100};  // 0x90 = Note On channel 0, middle C, velocity 100
+                if (useSerialLogger) {
+                    hw.Print("Midi message is: ");
+                    for (int i = 0; i < 3; i++) {
+                        hw.Print("%d ", note_on[i]);
+                    }
                 }
+                else {
+                    midi.SendMessage(note_on, sizeof(note_on));
+                }
+                // hw.Print("Midi message is %d", note_on);
+                // midi.SendMessage(note_on, sizeof(note_on));
+                
+                // Note On for middle C with velocity 100
             }
             else {
-                midi.SendMessage(note_on, sizeof(note_on));
+                hw.SetLed(false);
+                // Button released
+                // hw.PrintLine("Button released ");
+                // button_pressed = false;
+                uint8_t note_off[3] = {0x80, 60, 0};  // 0890 = Note Off channel 0, middle C, velocity 0
+                if (useSerialLogger) {
+                    hw.Print("Midi message is: ");
+                    for (int i = 0; i < 3; i++) {
+                        hw.Print("%d ", note_off[i]);
+                    }
+                }
+                else {
+                    midi.SendMessage(note_off, sizeof(note_off));
+                }
+
+                // hw.Print("Midi message is %d", note_off);
+                // midi.SendMessage(note_off, sizeof(note_off));
+                // midi.SendMessage(MidiEvent::NoteOff(60, 0)); // Note Off for middle C
             }
-            // hw.Print("Midi message is %d", note_on);
-            // midi.SendMessage(note_on, sizeof(note_on));
+            last_button_state = current_button_state;
             
-            // Note On for middle C with velocity 100
         }
-        else if (current_button_state == 1)
-        {
-            hw.SetLed(false);
-            // Button released
-            // hw.PrintLine("Button released ");
-            // button_pressed = false;
-            uint8_t note_off[3] = {0x80, 60, 0};  // 0x90 = Note On channel 0, middle C, velocity 100
-            if (useSerialLogger) {
-                hw.Print("Midi message is: ");
-                for (int i = 0; i < 3; i++) {
-                    hw.Print("%d ", note_off[i]);
-                }
-            }
-            else {
-                midi.SendMessage(note_off, sizeof(note_off));
-            }
-
-            // hw.Print("Midi message is %d", note_off);
-            // midi.SendMessage(note_off, sizeof(note_off));
-            // midi.SendMessage(MidiEvent::NoteOff(60, 0)); // Note Off for middle C
-        }
-        hw.DelayMs(1);
     }
 }

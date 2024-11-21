@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -56,9 +56,9 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   32              		@ args = 0, pretend = 0, frame = 0
   33              		@ frame_needed = 0, uses_anonymous_args = 0
   34              		@ link register save eliminated.
-  35              	.LBB204:
-  36              	.LBI204:
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 2
+  35              	.LBB205:
+  36              	.LBI205:
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 2
 
 
   37              		.file 2 "../../libDaisy/src/sys/system.h"
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   54:../../libDaisy/src/sys/system.h **** 
   55:../../libDaisy/src/sys/system.h ****         SysClkFreq cpu_freq;
   56:../../libDaisy/src/sys/system.h ****         bool       use_dcache;
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 3
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 3
 
 
   57:../../libDaisy/src/sys/system.h ****         bool       use_icache;
@@ -164,9 +164,9 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   97:../../libDaisy/src/sys/system.h ****     ~System() {}
   38              		.loc 2 97 5 view .LVU1
   39              		.loc 2 97 5 is_stmt 0 view .LVU2
-  40              	.LBE204:
-  41              	.LBB205:
-  42              	.LBI205:
+  40              	.LBE205:
+  41              	.LBB206:
+  42              	.LBI206:
   43              		.file 3 "../../libDaisy/src/hid/usb.h"
    1:../../libDaisy/src/hid/usb.h **** #pragma once
    2:../../libDaisy/src/hid/usb.h **** #ifndef DSY_HID_USB_H
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
    8:../../libDaisy/src/hid/usb.h **** /** @addtogroup human_interface
    9:../../libDaisy/src/hid/usb.h ****     @{
   10:../../libDaisy/src/hid/usb.h **** */
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 4
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 4
 
 
   11:../../libDaisy/src/hid/usb.h **** 
@@ -215,9 +215,9 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   42:../../libDaisy/src/hid/usb.h ****     ~UsbHandle() {}
   44              		.loc 3 42 5 is_stmt 1 view .LVU3
   45              		.loc 3 42 5 is_stmt 0 view .LVU4
-  46              	.LBE205:
-  47              	.LBB206:
-  48              	.LBI206:
+  46              	.LBE206:
+  47              	.LBB207:
+  48              	.LBI207:
   49              		.file 4 "../../libDaisy/src/per/adc.h"
    1:../../libDaisy/src/per/adc.h **** #pragma once
    2:../../libDaisy/src/per/adc.h **** #ifndef DSY_ADC_H
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   17:../../libDaisy/src/per/adc.h **** /* While there may not be many configuration options here,
   18:../../libDaisy/src/per/adc.h **** using a struct like this allows us to add more configuration
   19:../../libDaisy/src/per/adc.h **** later without breaking existing functionality.
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 5
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 5
 
 
   20:../../libDaisy/src/per/adc.h **** */
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   74:../../libDaisy/src/per/adc.h ****     void InitMux(dsy_gpio_pin    adc_pin,
   75:../../libDaisy/src/per/adc.h ****                  size_t          mux_channels,
   76:../../libDaisy/src/per/adc.h ****                  dsy_gpio_pin    mux_0,
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 6
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 6
 
 
   77:../../libDaisy/src/per/adc.h ****                  dsy_gpio_pin    mux_1 = {DSY_GPIOX, 0},
@@ -337,9 +337,9 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  110:../../libDaisy/src/per/adc.h ****     ~AdcHandle() {}
   50              		.loc 4 110 5 is_stmt 1 view .LVU5
   51              		.loc 4 110 5 is_stmt 0 view .LVU6
-  52              	.LBE206:
-  53              	.LBB207:
-  54              	.LBI207:
+  52              	.LBE207:
+  53              	.LBB208:
+  54              	.LBI208:
   55              		.file 5 "../../libDaisy/src/hid/audio.h"
    1:../../libDaisy/src/hid/audio.h **** #ifndef DSY_AUDIO_H
    2:../../libDaisy/src/hid/audio.h **** #define DSY_AUDIO_H /**< & */
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   15:../../libDaisy/src/hid/audio.h ****  *           you will have to take the following steps:
   16:../../libDaisy/src/hid/audio.h ****  *             1. Create and Initialize an SaiHandle or two depending on your requirements
   17:../../libDaisy/src/hid/audio.h ****  *             2. Initialize the Audio Handle with the desired settings and the Initialized SaiHand
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 7
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 7
 
 
   18:../../libDaisy/src/hid/audio.h ****  *             3. If the connected codec requires special configuration or initialization, do so
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   72:../../libDaisy/src/hid/audio.h ****      */
   73:../../libDaisy/src/hid/audio.h ****     typedef void (*AudioCallback)(InputBuffer  in,
   74:../../libDaisy/src/hid/audio.h ****                                   OutputBuffer out,
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 8
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 8
 
 
   75:../../libDaisy/src/hid/audio.h ****                                   size_t       size);
@@ -445,7 +445,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   96:../../libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
   56              		.loc 5 96 5 is_stmt 1 view .LVU7
   57              		.loc 5 96 5 is_stmt 0 view .LVU8
-  58              	.LBE207:
+  58              	.LBE208:
   59              		.loc 1 22 19 view .LVU9
   60 0000 7047     		bx	lr
   61              		.cfi_endproc
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   13:../../libDaisy/src/hid/midi.h **** #include "sys/dma.h"
   14:../../libDaisy/src/hid/midi.h **** #include "sys/system.h"
   15:../../libDaisy/src/hid/midi.h **** 
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 9
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 9
 
 
   16:../../libDaisy/src/hid/midi.h **** namespace daisy
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   70:../../libDaisy/src/hid/midi.h ****         uart_config.mode       = UartHandler::Config::Mode::TX_RX;
   71:../../libDaisy/src/hid/midi.h ****         uart_config.wordlength = UartHandler::Config::WordLength::BITS_8;
   72:../../libDaisy/src/hid/midi.h **** 
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 10
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 10
 
 
   73:../../libDaisy/src/hid/midi.h ****         //user settings
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  127:../../libDaisy/src/hid/midi.h ****                            UartHandler::Result res)
  128:../../libDaisy/src/hid/midi.h ****     {
  129:../../libDaisy/src/hid/midi.h ****         /** Read context as transport type */
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 11
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 11
 
 
  130:../../libDaisy/src/hid/midi.h ****         MidiUartTransport* transport
@@ -633,8 +633,8 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   80              		@ args = 0, pretend = 0, frame = 0
   81              		@ frame_needed = 0, uses_anonymous_args = 0
   82              		@ link register save eliminated.
-  83              	.LBB208:
-  84              	.LBI208:
+  83              	.LBB209:
+  84              	.LBI209:
   85              		.file 7 "../../libDaisy/src/util/FIFO.h"
    1:../../libDaisy/src/util/FIFO.h **** #pragma once
    2:../../libDaisy/src/util/FIFO.h **** 
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   20:../../libDaisy/src/util/FIFO.h ****     : buffer_(buffer), bufferSize_(bufferSize), bufferIn_(0), bufferOut_(0)
   21:../../libDaisy/src/util/FIFO.h ****     {
   22:../../libDaisy/src/util/FIFO.h ****         PushBack(valuesToAdd);
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 12
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 12
 
 
   23:../../libDaisy/src/util/FIFO.h ****     }
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   77:../../libDaisy/src/util/FIFO.h ****     T& Back()
   78:../../libDaisy/src/util/FIFO.h ****     {
   79:../../libDaisy/src/util/FIFO.h ****         if(IsEmpty())
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 13
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 13
 
 
   80:../../libDaisy/src/util/FIFO.h ****             // invalid, but better not pass a temporary T() object as a reference...
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  134:../../libDaisy/src/util/FIFO.h ****     bool Contains(const T& element)
  135:../../libDaisy/src/util/FIFO.h ****     {
  136:../../libDaisy/src/util/FIFO.h ****         auto idx = bufferOut_;
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 14
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 14
 
 
  137:../../libDaisy/src/util/FIFO.h ****         while(idx != bufferIn_)
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  191:../../libDaisy/src/util/FIFO.h ****         // copy last element
  192:../../libDaisy/src/util/FIFO.h ****         PushBack(Back());
  193:../../libDaisy/src/util/FIFO.h ****         // move remaining elements: n => n+1
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 15
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 15
 
 
  194:../../libDaisy/src/util/FIFO.h ****         for(int i = GetNumElements() - 2; i > int(idx); i--)
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  248:../../libDaisy/src/util/FIFO.h ****                 if(idx == int(GetNumElements()) - 1)
  249:../../libDaisy/src/util/FIFO.h ****                     idx--;
  250:../../libDaisy/src/util/FIFO.h ****             }
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 16
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 16
 
 
  251:../../libDaisy/src/util/FIFO.h ****             else
@@ -950,19 +950,19 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  297:../../libDaisy/src/util/FIFO.h **** template <typename T, size_t capacity>
  298:../../libDaisy/src/util/FIFO.h **** class FIFO : public FIFOBase<T>
   86              		.loc 7 298 7 view .LVU11
-  87              	.LBB209:
-  88              	.LBI209:
+  87              	.LBB210:
+  88              	.LBI210:
   42:../../libDaisy/src/util/FIFO.h **** 
   89              		.loc 7 42 5 view .LVU12
   42:../../libDaisy/src/util/FIFO.h **** 
   90              		.loc 7 42 5 is_stmt 0 view .LVU13
-  91              	.LBE209:
-  92              	.LBE208:
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 17
+  91              	.LBE210:
+  92              	.LBE209:
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 17
 
 
-  93              	.LBB210:
-  94              	.LBI210:
+  93              	.LBB211:
+  94              	.LBI211:
   95              		.file 8 "../../libDaisy/src/hid/midi_parser.h"
    1:../../libDaisy/src/hid/midi_parser.h **** #pragma once
    2:../../libDaisy/src/hid/midi_parser.h **** #ifndef DSY_MIDI_PARSER_H
@@ -985,9 +985,9 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   19:../../libDaisy/src/hid/midi_parser.h ****     ~MidiParser() {}
   96              		.loc 8 19 5 is_stmt 1 view .LVU14
   97              		.loc 8 19 5 is_stmt 0 view .LVU15
-  98              	.LBE210:
-  99              	.LBB211:
- 100              	.LBI211:
+  98              	.LBE211:
+  99              	.LBB212:
+ 100              	.LBI212:
  101              		.file 9 "../../libDaisy/src/hid/usb_midi.h"
    1:../../libDaisy/src/hid/usb_midi.h **** #pragma once
    2:../../libDaisy/src/hid/usb_midi.h **** #ifndef __DSY_MIDIUSBTRANSPORT_H__
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   27:../../libDaisy/src/hid/usb_midi.h ****         };
   28:../../libDaisy/src/hid/usb_midi.h **** 
   29:../../libDaisy/src/hid/usb_midi.h ****         Periph periph;
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 18
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 18
 
 
   30:../../libDaisy/src/hid/usb_midi.h **** 
@@ -1050,7 +1050,7 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   56:../../libDaisy/src/hid/usb_midi.h ****     ~MidiUsbTransport() {}
  102              		.loc 9 56 5 is_stmt 1 view .LVU16
  103              		.loc 9 56 5 is_stmt 0 view .LVU17
- 104              	.LBE211:
+ 104              	.LBE212:
  105              		.loc 6 156 21 view .LVU18
  106 0000 7047     		bx	lr
  107              		.cfi_endproc
@@ -1064,24 +1064,24 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  115      00
  116 0005 000000   		.align	2
  117              	.LC1:
- 118 0008 42757474 		.ascii	"Button State: %s\000"
- 118      6F6E2053 
- 118      74617465 
- 118      3A202573 
- 118      00
- 119 0019 000000   		.align	2
- 120              	.LC3:
- 121 001c 66616C73 		.ascii	"false\000"
- 121      6500
- 122 0022 0000     		.align	2
- 123              	.LC2:
- 124 0024 803C00   		.ascii	"\200<\000"
- 125 0027 00       		.align	2
+ 118 0008 66616C73 		.ascii	"false\000"
+ 118      6500
+ 119 000e 0000     		.align	2
+ 120              	.LC2:
+ 121 0010 42757474 		.ascii	"Button State: %s\000"
+ 121      6F6E2053 
+ 121      74617465 
+ 121      3A202573 
+ 121      00
+ 122 0021 000000   		.align	2
+ 123              	.LC3:
+ 124 0024 903C6400 		.ascii	"\220<d\000"
+ 125              		.align	2
  126              	.LC4:
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 19
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 19
 
 
- 127 0028 903C6400 		.ascii	"\220<d\000"
+ 127 0028 803C00   		.ascii	"\200<\000"
  128              		.section	.text.startup.main,"ax",%progbits
  129              		.align	1
  130              		.p2align 2,,3
@@ -1116,15 +1116,17 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  143              		.loc 10 17 5 view .LVU20
   15:MIDIController.cpp ****      // hw.Configure(); 
  144              		.loc 10 15 1 is_stmt 0 view .LVU21
- 145 0000 70B5     		push	{r4, r5, r6, lr}
- 146              		.cfi_def_cfa_offset 16
- 147              		.cfi_offset 4, -16
- 148              		.cfi_offset 5, -12
- 149              		.cfi_offset 6, -8
- 150              		.cfi_offset 14, -4
- 151              	.LBB242:
- 152              	.LBB243:
+ 145 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
+ 146              		.cfi_def_cfa_offset 24
+ 147              		.cfi_offset 4, -24
+ 148              		.cfi_offset 5, -20
+ 149              		.cfi_offset 6, -16
+ 150              		.cfi_offset 7, -12
+ 151              		.cfi_offset 8, -8
+ 152              		.cfi_offset 14, -4
  153              	.LBB244:
+ 154              	.LBB245:
+ 155              	.LBB246:
  157:../../libDaisy/src/hid/midi.h **** 
  158:../../libDaisy/src/hid/midi.h ****     struct Config
  159:../../libDaisy/src/hid/midi.h ****     {
@@ -1136,24 +1138,24 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  165:../../libDaisy/src/hid/midi.h ****      */
  166:../../libDaisy/src/hid/midi.h ****     void Init(Config config)
  167:../../libDaisy/src/hid/midi.h ****     {
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 20
+
+
  168:../../libDaisy/src/hid/midi.h ****         config_ = config;
- 154              		.loc 6 168 9 view .LVU22
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 20
-
-
- 155 0002 274C     		ldr	r4, .L12
- 156              	.LBE244:
- 157              	.LBE243:
- 158              	.LBE242:
+ 156              		.loc 6 168 9 view .LVU22
+ 157 0004 2A4C     		ldr	r4, .L14
+ 158              	.LBE246:
+ 159              	.LBE245:
+ 160              	.LBE244:
   15:MIDIController.cpp ****      // hw.Configure(); 
- 159              		.loc 10 15 1 view .LVU23
- 160 0004 88B0     		sub	sp, sp, #32
- 161              		.cfi_def_cfa_offset 48
- 162              		.loc 10 17 12 view .LVU24
- 163 0006 0021     		movs	r1, #0
- 164 0008 2648     		ldr	r0, .L12+4
- 165 000a FFF7FEFF 		bl	_ZN5daisy9DaisySeed4InitEb
- 166              	.LVL2:
+ 161              		.loc 10 15 1 view .LVU23
+ 162 0006 88B0     		sub	sp, sp, #32
+ 163              		.cfi_def_cfa_offset 56
+ 164              		.loc 10 17 12 view .LVU24
+ 165 0008 0021     		movs	r1, #0
+ 166 000a 2A48     		ldr	r0, .L14+4
+ 167 000c FFF7FEFF 		bl	_ZN5daisy9DaisySeed4InitEb
+ 168              	.LVL2:
   18:MIDIController.cpp **** 
   19:MIDIController.cpp **** 
   20:MIDIController.cpp ****     // hw.StartLog();
@@ -1161,11 +1163,11 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   22:MIDIController.cpp ****     // hw.PrintLine("Serial Logger started!");
   23:MIDIController.cpp **** 
   24:MIDIController.cpp ****     bool useSerialLogger = false;
- 167              		.loc 10 24 5 is_stmt 1 view .LVU25
+ 169              		.loc 10 24 5 is_stmt 1 view .LVU25
   25:MIDIController.cpp **** 
   26:MIDIController.cpp ****     if (useSerialLogger) {
- 168              		.loc 10 26 5 view .LVU26
- 169              	.LBB251:
+ 170              		.loc 10 26 5 view .LVU26
+ 171              	.LBB253:
   27:MIDIController.cpp ****         // Start the Serial Logger
   28:MIDIController.cpp ****         hw.StartLog();
   29:MIDIController.cpp ****         // hw.DelayMs(5000);
@@ -1178,89 +1180,89 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   36:MIDIController.cpp ****     else {
   37:MIDIController.cpp ****         // Initialize USB MIDI
   38:MIDIController.cpp ****         MidiUsbHandler::Config midi_cfg;
- 170              		.loc 10 38 9 view .LVU27
- 171              	.LBB248:
- 172              	.LBI248:
+ 172              		.loc 10 38 9 view .LVU27
+ 173              	.LBB250:
+ 174              	.LBI250:
  158:../../libDaisy/src/hid/midi.h ****     {
- 173              		.loc 6 158 12 view .LVU28
- 174              	.LBB249:
- 175              	.LBI249:
+ 175              		.loc 6 158 12 view .LVU28
+ 176              	.LBB251:
+ 177              	.LBI251:
   43:../../libDaisy/src/hid/usb_midi.h ****     };
- 176              		.loc 9 43 9 view .LVU29
+ 178              		.loc 9 43 9 view .LVU29
   43:../../libDaisy/src/hid/usb_midi.h ****     };
- 177              		.loc 9 43 9 is_stmt 0 view .LVU30
- 178              	.LBE249:
- 179              	.LBE248:
+ 179              		.loc 9 43 9 is_stmt 0 view .LVU30
+ 180              	.LBE251:
+ 181              	.LBE250:
   39:MIDIController.cpp ****         midi_cfg.transport_config.periph = MidiUsbTransport::Config::INTERNAL;
- 180              		.loc 10 39 9 is_stmt 1 view .LVU31
+ 182              		.loc 10 39 9 is_stmt 1 view .LVU31
   40:MIDIController.cpp ****         midi.Init(midi_cfg);
- 181              		.loc 10 40 9 view .LVU32
- 182              	.LBB250:
- 183              	.LBI243:
+ 183              		.loc 10 40 9 view .LVU32
+ 184              	.LBB252:
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 21
+
+
+ 185              	.LBI245:
  166:../../libDaisy/src/hid/midi.h ****     {
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 21
-
-
- 184              		.loc 6 166 10 view .LVU33
- 185              	.LBB247:
- 186              		.loc 6 168 9 is_stmt 0 view .LVU34
- 187 000e 4FF44073 		mov	r3, #768
+ 186              		.loc 6 166 10 view .LVU33
+ 187              	.LBB249:
+ 188              		.loc 6 168 9 is_stmt 0 view .LVU34
+ 189 0010 4FF44073 		mov	r3, #768
  169:../../libDaisy/src/hid/midi.h ****         transport_.Init(config_.transport_config);
- 188              		.loc 6 169 24 view .LVU35
- 189 0012 2046     		mov	r0, r4
- 190 0014 244E     		ldr	r6, .L12+8
+ 190              		.loc 6 169 24 view .LVU35
+ 191 0014 2046     		mov	r0, r4
+ 192 0016 284F     		ldr	r7, .L14+8
  168:../../libDaisy/src/hid/midi.h ****         transport_.Init(config_.transport_config);
- 191              		.loc 6 168 9 view .LVU36
- 192 0016 2380     		strh	r3, [r4]	@ movhi
- 193              		.loc 6 169 24 view .LVU37
- 194 0018 50F8041B 		ldr	r1, [r0], #4
- 195 001c FFF7FEFF 		bl	_ZN5daisy16MidiUsbTransport4InitENS0_6ConfigE
- 196              	.LVL3:
- 197              	.LBB245:
- 198              	.LBI245:
+ 193              		.loc 6 168 9 view .LVU36
+ 194 0018 2380     		strh	r3, [r4]	@ movhi
+ 195 001a 02AE     		add	r6, sp, #8
+ 196              		.loc 6 169 24 view .LVU37
+ 197 001c 50F8041B 		ldr	r1, [r0], #4
+ 198 0020 FFF7FEFF 		bl	_ZN5daisy16MidiUsbTransport4InitENS0_6ConfigE
+ 199              	.LVL3:
+ 200              	.LBB247:
+ 201              	.LBI247:
   20:../../libDaisy/src/hid/midi_parser.h **** 
   21:../../libDaisy/src/hid/midi_parser.h ****     inline void Init() { Reset(); }
- 199              		.loc 8 21 17 is_stmt 1 view .LVU38
- 200              	.LBB246:
- 201              		.loc 8 21 26 view .LVU39
- 202              		.loc 8 21 31 is_stmt 0 view .LVU40
- 203 0020 04F10800 		add	r0, r4, #8
- 204 0024 FFF7FEFF 		bl	_ZN5daisy10MidiParser5ResetEv
- 205              	.LVL4:
- 206              		.loc 8 21 31 view .LVU41
- 207              	.LBE246:
- 208              	.LBE245:
- 209              	.LBE247:
- 210              	.LBE250:
+ 202              		.loc 8 21 17 is_stmt 1 view .LVU38
+ 203              	.LBB248:
+ 204              		.loc 8 21 26 view .LVU39
+ 205              		.loc 8 21 31 is_stmt 0 view .LVU40
+ 206 0024 04F10800 		add	r0, r4, #8
+ 207 0028 FFF7FEFF 		bl	_ZN5daisy10MidiParser5ResetEv
+ 208              	.LVL4:
+ 209              		.loc 8 21 31 view .LVU41
+ 210              	.LBE248:
+ 211              	.LBE247:
+ 212              	.LBE249:
+ 213              	.LBE252:
   41:MIDIController.cpp ****         hw.SetLed(false);
- 211              		.loc 10 41 9 is_stmt 1 view .LVU42
- 212              		.loc 10 41 18 is_stmt 0 view .LVU43
- 213 0028 0021     		movs	r1, #0
- 214 002a 1E48     		ldr	r0, .L12+4
- 215 002c 02AC     		add	r4, sp, #8
- 216 002e FFF7FEFF 		bl	_ZN5daisy9DaisySeed6SetLedEb
- 217              	.LVL5:
- 218              		.loc 10 41 18 view .LVU44
- 219              	.LBE251:
+ 214              		.loc 10 41 9 is_stmt 1 view .LVU42
+ 215              		.loc 10 41 18 is_stmt 0 view .LVU43
+ 216 002c 0021     		movs	r1, #0
+ 217 002e 2148     		ldr	r0, .L14+4
+ 218 0030 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6SetLedEb
+ 219              	.LVL5:
+ 220              		.loc 10 41 18 view .LVU44
+ 221              	.LBE253:
   42:MIDIController.cpp ****     }
   43:MIDIController.cpp ****    
   44:MIDIController.cpp ****     
   45:MIDIController.cpp **** 
   46:MIDIController.cpp ****     // Initialize button
   47:MIDIController.cpp ****     GPIO my_button;
- 220              		.loc 10 47 5 is_stmt 1 view .LVU45
- 221              	.LBB252:
- 222              	.LBI252:
- 223              		.file 11 "../../libDaisy/src/per/gpio.h"
+ 222              		.loc 10 47 5 is_stmt 1 view .LVU45
+ 223              	.LBB254:
+ 224              	.LBI254:
+ 225              		.file 11 "../../libDaisy/src/per/gpio.h"
    1:../../libDaisy/src/per/gpio.h **** #pragma once
    2:../../libDaisy/src/per/gpio.h **** #ifndef DSY_GPIO_H
    3:../../libDaisy/src/per/gpio.h **** #define DSY_GPIO_H
    4:../../libDaisy/src/per/gpio.h **** #include "daisy_core.h"
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 22
+
+
    5:../../libDaisy/src/per/gpio.h **** 
    6:../../libDaisy/src/per/gpio.h **** #ifdef __cplusplus
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 22
-
-
    7:../../libDaisy/src/per/gpio.h **** 
    8:../../libDaisy/src/per/gpio.h **** namespace daisy
    9:../../libDaisy/src/per/gpio.h **** {
@@ -1316,11 +1318,11 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   59:../../libDaisy/src/per/gpio.h ****     {
   60:../../libDaisy/src/per/gpio.h ****         Pin   pin;
   61:../../libDaisy/src/per/gpio.h ****         Mode  mode;
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 23
+
+
   62:../../libDaisy/src/per/gpio.h ****         Pull  pull;
   63:../../libDaisy/src/per/gpio.h ****         Speed speed;
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 23
-
-
   64:../../libDaisy/src/per/gpio.h **** 
   65:../../libDaisy/src/per/gpio.h ****         /** Constructor with no arguments will prepare an invalid GPIO set as
   66:../../libDaisy/src/per/gpio.h ****          *  an input, with no pullup. 
@@ -1332,17 +1334,17 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   72:../../libDaisy/src/per/gpio.h ****     };
   73:../../libDaisy/src/per/gpio.h **** 
   74:../../libDaisy/src/per/gpio.h ****     GPIO() {}
- 224              		.loc 11 74 5 view .LVU46
- 225              	.LBB253:
- 226              	.LBB254:
- 227              	.LBI254:
+ 226              		.loc 11 74 5 view .LVU46
+ 227              	.LBB255:
+ 228              	.LBB256:
+ 229              	.LBI256:
   68:../../libDaisy/src/per/gpio.h ****         : pin(), mode(Mode::INPUT), pull(Pull::NOPULL), speed(Speed::LOW)
- 228              		.loc 11 68 9 view .LVU47
- 229              	.LBB255:
- 230              	.LBB256:
+ 230              		.loc 11 68 9 view .LVU47
  231              	.LBB257:
- 232              	.LBI257:
- 233              		.file 12 "../../libDaisy/src/daisy_core.h"
+ 232              	.LBB258:
+ 233              	.LBB259:
+ 234              	.LBI259:
+ 235              		.file 12 "../../libDaisy/src/daisy_core.h"
    1:../../libDaisy/src/daisy_core.h **** #pragma once
    2:../../libDaisy/src/daisy_core.h **** #ifndef DSY_CORE_HW_H
    3:../../libDaisy/src/daisy_core.h **** #define DSY_CORE_HW_H /**< & */
@@ -1376,11 +1378,11 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   31:../../libDaisy/src/daisy_core.h **** #define DTCM_MEM_SECTION __attribute__((section(".dtcmram_bss")))
   32:../../libDaisy/src/daisy_core.h **** 
   33:../../libDaisy/src/daisy_core.h **** #define FBIPMAX 0.999985f             /**< close to 1.0f-LSB at 16 bit */
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 24
+
+
   34:../../libDaisy/src/daisy_core.h **** #define FBIPMIN (-FBIPMAX)            /**< - (1 - LSB) */
   35:../../libDaisy/src/daisy_core.h **** #define U82F_SCALE 0.0078740f         /**< 1 / 127 */
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 24
-
-
   36:../../libDaisy/src/daisy_core.h **** #define F2U8_SCALE 127.0f             /**< 128 - 1 */
   37:../../libDaisy/src/daisy_core.h **** #define S82F_SCALE 0.0078125f         /**< 1 / (2**7) */
   38:../../libDaisy/src/daisy_core.h **** #define F2S8_SCALE 127.0f             /**< (2 ** 7) - 1 */
@@ -1436,11 +1438,11 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   88:../../libDaisy/src/daisy_core.h **** {
   89:../../libDaisy/src/daisy_core.h ****     x = x <= FBIPMIN ? FBIPMIN : x;
   90:../../libDaisy/src/daisy_core.h ****     x = x >= FBIPMAX ? FBIPMAX : x;
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 25
+
+
   91:../../libDaisy/src/daisy_core.h ****     return (uint8_t)((x * F2U8_SCALE) + F2U8_SCALE);
   92:../../libDaisy/src/daisy_core.h **** }
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 25
-
-
   93:../../libDaisy/src/daisy_core.h **** 
   94:../../libDaisy/src/daisy_core.h **** 
   95:../../libDaisy/src/daisy_core.h **** /** 
@@ -1496,11 +1498,11 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  145:../../libDaisy/src/daisy_core.h ****  */
  146:../../libDaisy/src/daisy_core.h **** FORCE_INLINE int32_t f2s24(float x)
  147:../../libDaisy/src/daisy_core.h **** {
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 26
+
+
  148:../../libDaisy/src/daisy_core.h ****     x = x <= FBIPMIN ? FBIPMIN : x;
  149:../../libDaisy/src/daisy_core.h ****     x = x >= FBIPMAX ? FBIPMAX : x;
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 26
-
-
  150:../../libDaisy/src/daisy_core.h ****     return (int32_t)(x * F2S24_SCALE);
  151:../../libDaisy/src/daisy_core.h **** }
  152:../../libDaisy/src/daisy_core.h **** 
@@ -1556,11 +1558,11 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  202:../../libDaisy/src/daisy_core.h ****  *  Please use Pin struct instead.
  203:../../libDaisy/src/daisy_core.h ****  */
  204:../../libDaisy/src/daisy_core.h **** typedef struct
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 27
+
+
  205:../../libDaisy/src/daisy_core.h **** {
  206:../../libDaisy/src/daisy_core.h ****     dsy_gpio_port port; /**< & */
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 27
-
-
  207:../../libDaisy/src/daisy_core.h ****     uint8_t       pin;  /**< number 0-15 */
  208:../../libDaisy/src/daisy_core.h **** } dsy_gpio_pin;
  209:../../libDaisy/src/daisy_core.h **** 
@@ -1616,11 +1618,11 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  259:../../libDaisy/src/daisy_core.h **** /** @brief representation of hardware port/pin combination */
  260:../../libDaisy/src/daisy_core.h **** struct Pin
  261:../../libDaisy/src/daisy_core.h **** {
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 28
+
+
  262:../../libDaisy/src/daisy_core.h ****     GPIOPort port;
  263:../../libDaisy/src/daisy_core.h ****     uint8_t  pin;
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 28
-
-
  264:../../libDaisy/src/daisy_core.h **** 
  265:../../libDaisy/src/daisy_core.h ****     /** @brief Constructor creates a valid pin. 
  266:../../libDaisy/src/daisy_core.h ****      *  @param pt GPIOPort between PA, and PK corresponding to STM32 Port.
@@ -1630,71 +1632,101 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  270:../../libDaisy/src/daisy_core.h **** 
  271:../../libDaisy/src/daisy_core.h ****     /** @brief Basic Constructor creates an invalid Pin object */
  272:../../libDaisy/src/daisy_core.h ****     constexpr Pin() : port(PORTX), pin(255) {}
- 234              		.loc 12 272 15 view .LVU48
- 235              		.loc 12 272 15 is_stmt 0 view .LVU49
- 236              	.LBE257:
+ 236              		.loc 12 272 15 view .LVU48
+ 237              		.loc 12 272 15 is_stmt 0 view .LVU49
+ 238              	.LBE259:
   69:../../libDaisy/src/per/gpio.h ****         {
- 237              		.loc 11 69 73 view .LVU50
- 238 0032 0022     		movs	r2, #0
- 239              	.LBE256:
- 240              	.LBE255:
- 241              	.LBE254:
- 242              		.loc 11 74 12 view .LVU51
- 243 0034 4FF60B70 		movw	r0, #65291
- 244              	.LBE253:
- 245              	.LBE252:
+ 239              		.loc 11 69 73 view .LVU50
+ 240 0034 0022     		movs	r2, #0
+ 241              	.LBE258:
+ 242              	.LBE257:
+ 243              	.LBE256:
+ 244              		.loc 11 74 12 view .LVU51
+ 245 0036 4FF60B70 		movw	r0, #65291
+ 246              	.LBE255:
+ 247              	.LBE254:
   48:MIDIController.cpp ****     my_button.Init(D0, GPIO::Mode::INPUT, GPIO::Pull::PULLUP);
- 246              		.loc 10 48 19 view .LVU52
- 247 0038 1C49     		ldr	r1, .L12+12
- 248 003a 0123     		movs	r3, #1
- 249 003c 0092     		str	r2, [sp]
- 250 003e 0968     		ldr	r1, [r1]
- 251 0040 1B4D     		ldr	r5, .L12+16
- 252              	.LBB266:
- 253              	.LBB264:
- 254              	.LBB262:
- 255              	.LBB260:
- 256              	.LBB258:
+ 248              		.loc 10 48 19 view .LVU52
+ 249 003a 2049     		ldr	r1, .L14+12
+ 250 003c 0123     		movs	r3, #1
+ 251 003e 0092     		str	r2, [sp]
+ 252 0040 0968     		ldr	r1, [r1]
+  49:MIDIController.cpp **** 
+  50:MIDIController.cpp ****     // bool button_pressed =  false;
+  51:MIDIController.cpp **** 
+  52:MIDIController.cpp ****     // button_pressed = true;
+  53:MIDIController.cpp **** 
+  54:MIDIController.cpp ****     // hw.DelayMs(2000);
+  55:MIDIController.cpp ****     
+  56:MIDIController.cpp ****     // hw.PrintLine("Serial Logger initialized!");
+  57:MIDIController.cpp ****     bool last_button_state = true;
+ 253              		.loc 10 57 10 view .LVU53
+ 254 0042 1D46     		mov	r5, r3
+ 255 0044 DFF88880 		ldr	r8, .L14+32
+ 256              	.LBB268:
+ 257              	.LBB266:
+ 258              	.LBB264:
+ 259              	.LBB262:
+ 260              	.LBB260:
   69:../../libDaisy/src/per/gpio.h ****         {
- 257              		.loc 11 69 73 view .LVU53
- 258 0042 CDE90302 		strd	r0, r2, [sp, #12]
- 259              	.LBE258:
- 260              	.LBE260:
- 261              	.LBE262:
- 262              	.LBE264:
- 263              	.LBE266:
- 264              		.loc 10 48 19 view .LVU54
- 265 0046 03A8     		add	r0, sp, #12
- 266              	.LVL6:
- 267              	.LBB267:
- 268              	.LBB265:
- 269              	.LBB263:
- 270              	.LBB261:
- 271              	.LBB259:
-  69:../../libDaisy/src/per/gpio.h ****         {
- 272              		.loc 11 69 73 view .LVU55
- 273 0048 CDE90522 		strd	r2, r2, [sp, #20]
- 274              	.LVL7:
-  69:../../libDaisy/src/per/gpio.h ****         {
- 275              		.loc 11 69 73 view .LVU56
- 276              	.LBE259:
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 29
+ 261              		.loc 11 69 73 view .LVU54
+ 262 0048 CDE90302 		strd	r0, r2, [sp, #12]
+ 263              	.LBE260:
+ 264              	.LBE262:
+ 265              	.LBE264:
+ 266              	.LBE266:
+ 267              	.LBE268:
+  48:MIDIController.cpp ****     my_button.Init(D0, GPIO::Mode::INPUT, GPIO::Pull::PULLUP);
+ 268              		.loc 10 48 19 view .LVU55
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 29
 
 
- 277              	.LBE261:
- 278              	.LBE263:
- 279              	.LBE265:
- 280              	.LBE267:
- 281              		.loc 10 48 5 is_stmt 1 view .LVU57
- 282              		.loc 10 48 19 is_stmt 0 view .LVU58
- 283 004c FFF7FEFF 		bl	_ZN5daisy4GPIO4InitENS_3PinENS0_4ModeENS0_4PullENS0_5SpeedE
- 284              	.LVL8:
- 285 0050 14E0     		b	.L7
- 286              	.LVL9:
- 287              	.L5:
- 288              	.LBB268:
- 289              	.LBB269:
- 290              	.LBB270:
+ 269 004c 03A8     		add	r0, sp, #12
+ 270              	.LVL6:
+ 271              	.LBB269:
+ 272              	.LBB267:
+ 273              	.LBB265:
+ 274              	.LBB263:
+ 275              	.LBB261:
+  69:../../libDaisy/src/per/gpio.h ****         {
+ 276              		.loc 11 69 73 view .LVU56
+ 277 004e CDE90522 		strd	r2, r2, [sp, #20]
+ 278              	.LVL7:
+  69:../../libDaisy/src/per/gpio.h ****         {
+ 279              		.loc 11 69 73 view .LVU57
+ 280              	.LBE261:
+ 281              	.LBE263:
+ 282              	.LBE265:
+ 283              	.LBE267:
+ 284              	.LBE269:
+  48:MIDIController.cpp ****     my_button.Init(D0, GPIO::Mode::INPUT, GPIO::Pull::PULLUP);
+ 285              		.loc 10 48 5 is_stmt 1 view .LVU58
+  48:MIDIController.cpp ****     my_button.Init(D0, GPIO::Mode::INPUT, GPIO::Pull::PULLUP);
+ 286              		.loc 10 48 19 is_stmt 0 view .LVU59
+ 287 0052 FFF7FEFF 		bl	_ZN5daisy4GPIO4InitENS_3PinENS0_4ModeENS0_4PullENS0_5SpeedE
+ 288              	.LVL8:
+ 289              		.loc 10 57 5 is_stmt 1 view .LVU60
+ 290              	.L7:
+  58:MIDIController.cpp ****     while(1)
+ 291              		.loc 10 58 5 view .LVU61
+ 292              	.LBB270:
+  59:MIDIController.cpp ****     {
+  60:MIDIController.cpp ****         bool current_button_state = my_button.Read();
+ 293              		.loc 10 60 9 view .LVU62
+ 294              		.loc 10 60 51 is_stmt 0 view .LVU63
+ 295 0056 03A8     		add	r0, sp, #12
+ 296 0058 FFF7FEFF 		bl	_ZN5daisy4GPIO4ReadEv
+ 297              	.LVL9:
+  61:MIDIController.cpp ****         // hw.PrintLine("Logger is enabled");
+  62:MIDIController.cpp ****         hw.PrintLine("Button State: %s", current_button_state ? "true" : "false");
+ 298              		.loc 10 62 9 is_stmt 1 view .LVU64
+ 299              		.loc 10 62 21 is_stmt 0 view .LVU65
+ 300 005c 184B     		ldr	r3, .L14+16
+ 301 005e 041E     		subs	r4, r0, #0
+ 302 0060 1849     		ldr	r1, .L14+20
+ 303              	.LVL10:
+ 304              	.LBB271:
+ 305              	.LBI271:
   23:../../libDaisy/src/daisy_seed.h **** 
   24:../../libDaisy/src/daisy_seed.h ****     /** This function used to provide a pre-initialization configuraiton 
   25:../../libDaisy/src/daisy_seed.h ****      *  it has since been deprecated, and does nothing.
@@ -1706,6 +1738,9 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   31:../../libDaisy/src/daisy_seed.h ****     SDRAM, QSPI, 24-bit 48kHz Audio via AK4556, Internal USB,
   32:../../libDaisy/src/daisy_seed.h ****     as well as the built-in LED and Testpoint.
   33:../../libDaisy/src/daisy_seed.h **** 
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 30
+
+
   34:../../libDaisy/src/daisy_seed.h ****     ADCs, DACs, and other special peripherals (such as I2C, SPI, etc.)
   35:../../libDaisy/src/daisy_seed.h ****     can be initialized using their specific initializers within libdaisy
   36:../../libDaisy/src/daisy_seed.h ****     for a specific application.
@@ -1738,9 +1773,6 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   63:../../libDaisy/src/daisy_seed.h ****     /** Begins the audio for the seeds builtin audio.
   64:../../libDaisy/src/daisy_seed.h ****     the specified callback will get called whenever
   65:../../libDaisy/src/daisy_seed.h ****     new data is ready to be prepared.
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 30
-
-
   66:../../libDaisy/src/daisy_seed.h ****     This will use the newer non-interleaved callback.
   67:../../libDaisy/src/daisy_seed.h ****     */
   68:../../libDaisy/src/daisy_seed.h ****     void StartAudio(AudioHandle::AudioCallback cb);
@@ -1766,6 +1798,9 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   88:../../libDaisy/src/daisy_seed.h ****     float AudioSampleRate();
   89:../../libDaisy/src/daisy_seed.h **** 
   90:../../libDaisy/src/daisy_seed.h ****     /** Sets the number of samples processed per channel by the audio callback.
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 31
+
+
   91:../../libDaisy/src/daisy_seed.h ****      */
   92:../../libDaisy/src/daisy_seed.h ****     void SetAudioBlockSize(size_t blocksize);
   93:../../libDaisy/src/daisy_seed.h **** 
@@ -1798,104 +1833,112 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  120:../../libDaisy/src/daisy_seed.h ****         Log::Print(format, va...);
  121:../../libDaisy/src/daisy_seed.h ****     }
  122:../../libDaisy/src/daisy_seed.h **** 
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 31
-
-
  123:../../libDaisy/src/daisy_seed.h ****     /** Print formatted debug log message with automatic line termination
  124:../../libDaisy/src/daisy_seed.h ****     */
  125:../../libDaisy/src/daisy_seed.h ****     template <typename... VA>
  126:../../libDaisy/src/daisy_seed.h ****     static void PrintLine(const char* format, VA... va)
+ 306              		.loc 1 126 17 is_stmt 1 view .LVU66
+ 307              	.LBB272:
  127:../../libDaisy/src/daisy_seed.h ****     {
  128:../../libDaisy/src/daisy_seed.h ****         Log::PrintLine(format, va...);
- 291              		.loc 1 128 23 view .LVU59
- 292 0052 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
- 293              	.LVL10:
- 294              		.loc 1 128 23 view .LVU60
- 295              	.LBE270:
- 296              	.LBE269:
-  49:MIDIController.cpp **** 
-  50:MIDIController.cpp ****     // bool button_pressed =  false;
-  51:MIDIController.cpp **** 
-  52:MIDIController.cpp ****     // button_pressed = true;
-  53:MIDIController.cpp **** 
-  54:MIDIController.cpp ****     // hw.DelayMs(2000);
-  55:MIDIController.cpp ****     
-  56:MIDIController.cpp ****     // hw.PrintLine("Serial Logger initialized!");
-  57:MIDIController.cpp **** 
-  58:MIDIController.cpp ****     while(1)
-  59:MIDIController.cpp ****     {
-  60:MIDIController.cpp ****         bool current_button_state = my_button.Read();
-  61:MIDIController.cpp ****         // hw.PrintLine("Logger is enabled");
-  62:MIDIController.cpp ****         hw.PrintLine("Button State: %s", current_button_state ? "true" : "false");
+ 308              		.loc 1 128 23 is_stmt 0 view .LVU67
+ 309 0062 1948     		ldr	r0, .L14+24
+ 310              	.LVL11:
+ 311              		.loc 1 128 23 view .LVU68
+ 312 0064 08BF     		it	eq
+ 313 0066 1946     		moveq	r1, r3
+ 314              	.LVL12:
+ 315              		.loc 1 128 23 view .LVU69
+ 316 0068 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
+ 317              	.LVL13:
+ 318              		.loc 1 128 23 view .LVU70
+ 319              	.LBE272:
+ 320              	.LBE271:
   63:MIDIController.cpp ****         // Check button state
-  64:MIDIController.cpp ****         
-  65:MIDIController.cpp ****         if (current_button_state == 0 )
- 297              		.loc 10 65 9 is_stmt 1 view .LVU61
- 298              	.LBE268:
-  66:MIDIController.cpp ****         {
-  67:MIDIController.cpp ****             hw.SetLed(true);
-  68:MIDIController.cpp ****             // hw.PrintLine("Button pressed ");
-  69:MIDIController.cpp **** 
-  70:MIDIController.cpp ****             // Button pressed
-  71:MIDIController.cpp ****             // button_pressed = true;
-  72:MIDIController.cpp ****             //  MidiEvent midi1;
-  73:MIDIController.cpp ****             // // Initialize MIDI message for Note On
-  74:MIDIController.cpp ****             // // MidiEvent midi1;
-  75:MIDIController.cpp ****             // midi1.type = NoteOn;
-  76:MIDIController.cpp ****             // midi1.channel = 0;
-  77:MIDIController.cpp ****             // midi1.data[0] = 60; // middle C
-  78:MIDIController.cpp ****             // midi1.data[1] = 100; // velocity
-  79:MIDIController.cpp ****             // MidiMessage midi1 = MidiMessage::NoteOn(60, 100);
-  80:MIDIController.cpp ****             // midi.SendMessage(midi1);
-  81:MIDIController.cpp ****             uint8_t note_on[3] = {0x90, 60, 100};  // 0x90 = Note On channel 0, middle C, velocity 
-  82:MIDIController.cpp ****             if (useSerialLogger) {
-  83:MIDIController.cpp ****                 hw.Print("Midi message is: ");
-  84:MIDIController.cpp ****                 for (int i = 0; i < 3; i++) {
-  85:MIDIController.cpp ****                     hw.Print("%d ", note_on[i]);
-  86:MIDIController.cpp ****                 }
-  87:MIDIController.cpp ****             }
-  88:MIDIController.cpp ****             else {
-  89:MIDIController.cpp ****                 midi.SendMessage(note_on, sizeof(note_on));
-  90:MIDIController.cpp ****             }
-  91:MIDIController.cpp ****             // hw.Print("Midi message is %d", note_on);
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 32
+  64:MIDIController.cpp ****         if (current_button_state != last_button_state){
+ 321              		.loc 10 64 9 is_stmt 1 view .LVU71
+ 322              	.LBB273:
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 32
 
 
-  92:MIDIController.cpp ****             // midi.SendMessage(note_on, sizeof(note_on));
-  93:MIDIController.cpp ****             
-  94:MIDIController.cpp ****             // Note On for middle C with velocity 100
-  95:MIDIController.cpp ****         }
-  96:MIDIController.cpp ****         else if (current_button_state == 1)
- 299              		.loc 10 96 14 view .LVU62
- 300              	.LBB291:
- 301              	.LBB273:
- 302              	.LBB274:
- 303              	.LBB275:
-  97:MIDIController.cpp ****         {
-  98:MIDIController.cpp ****             hw.SetLed(false);
- 304              		.loc 10 98 13 view .LVU63
- 305              		.loc 10 98 22 is_stmt 0 view .LVU64
- 306 0056 0021     		movs	r1, #0
- 307 0058 1248     		ldr	r0, .L12+4
- 308 005a FFF7FEFF 		bl	_ZN5daisy9DaisySeed6SetLedEb
- 309              	.LVL11:
-  99:MIDIController.cpp ****             // Button released
- 100:MIDIController.cpp ****             // hw.PrintLine("Button released ");
- 101:MIDIController.cpp ****             // button_pressed = false;
- 102:MIDIController.cpp ****             uint8_t note_off[3] = {0x80, 60, 0};  // 0x90 = Note On channel 0, middle C, velocity 1
- 310              		.loc 10 102 13 is_stmt 1 view .LVU65
- 311              		.loc 10 102 21 is_stmt 0 view .LVU66
- 312 005e 3368     		ldr	r3, [r6]
- 313              	.L11:
- 314              	.LBE275:
- 315              	.LBE274:
- 316              	.LBB276:
-  81:MIDIController.cpp ****             if (useSerialLogger) {
- 317              		.loc 10 81 21 view .LVU67
- 318 0060 2380     		strh	r3, [r4]	@ movhi
- 319              	.LBB277:
- 320              	.LBB278:
- 321              	.LBB279:
+ 323 006c A542     		cmp	r5, r4
+ 324 006e F2D0     		beq	.L7
+ 325              	.LBB274:
+  65:MIDIController.cpp ****             hw.DelayMs(1);
+ 326              		.loc 10 65 13 view .LVU72
+ 327              		.loc 10 65 23 is_stmt 0 view .LVU73
+ 328 0070 0121     		movs	r1, #1
+ 329 0072 1048     		ldr	r0, .L14+4
+ 330 0074 FFF7FEFF 		bl	_ZN5daisy9DaisySeed7DelayMsEj
+ 331              	.LVL14:
+  66:MIDIController.cpp ****             current_button_state = my_button.Read(); // read again to 
+ 332              		.loc 10 66 13 is_stmt 1 view .LVU74
+ 333              		.loc 10 66 50 is_stmt 0 view .LVU75
+ 334 0078 03A8     		add	r0, sp, #12
+ 335 007a FFF7FEFF 		bl	_ZN5daisy4GPIO4ReadEv
+ 336              	.LVL15:
+ 337              	.LBB275:
+ 338              	.LBB276:
+  67:MIDIController.cpp ****             if (current_button_state == 0) {
+  68:MIDIController.cpp ****                 hw.SetLed(true);
+ 339              		.loc 10 68 17 is_stmt 1 view .LVU76
+ 340              	.LBE276:
+ 341              	.LBE275:
+  66:MIDIController.cpp ****             current_button_state = my_button.Read(); // read again to 
+ 342              		.loc 10 66 50 is_stmt 0 view .LVU77
+ 343 007e 0546     		mov	r5, r0
+ 344              	.LVL16:
+  67:MIDIController.cpp ****             if (current_button_state == 0) {
+ 345              		.loc 10 67 13 is_stmt 1 view .LVU78
+ 346              	.LBB289:
+ 347              	.LBB277:
+ 348              		.loc 10 68 26 is_stmt 0 view .LVU79
+ 349 0080 0121     		movs	r1, #1
+ 350 0082 0C48     		ldr	r0, .L14+4
+ 351              	.LBE277:
+  67:MIDIController.cpp ****             if (current_button_state == 0) {
+ 352              		.loc 10 67 13 view .LVU80
+ 353 0084 6DB9     		cbnz	r5, .L8
+ 354              	.LBB278:
+ 355              		.loc 10 68 26 view .LVU81
+ 356 0086 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6SetLedEb
+ 357              	.LVL17:
+  69:MIDIController.cpp ****                 // hw.PrintLine("Button pressed ");
+  70:MIDIController.cpp ****                 uint8_t note_on[3] = {0x90, 60, 100};  // 0x90 = Note On channel 0, middle C, veloc
+ 358              		.loc 10 70 17 is_stmt 1 view .LVU82
+ 359              		.loc 10 70 25 is_stmt 0 view .LVU83
+ 360 008a 3B68     		ldr	r3, [r7]
+ 361              	.L13:
+ 362              	.LBE278:
+ 363              	.LBB279:
+  71:MIDIController.cpp ****                 if (useSerialLogger) {
+  72:MIDIController.cpp ****                     hw.Print("Midi message is: ");
+  73:MIDIController.cpp ****                     for (int i = 0; i < 3; i++) {
+  74:MIDIController.cpp ****                         hw.Print("%d ", note_on[i]);
+  75:MIDIController.cpp ****                     }
+  76:MIDIController.cpp ****                 }
+  77:MIDIController.cpp ****                 else {
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 33
+
+
+  78:MIDIController.cpp ****                     midi.SendMessage(note_on, sizeof(note_on));
+  79:MIDIController.cpp ****                 }
+  80:MIDIController.cpp ****                 // hw.Print("Midi message is %d", note_on);
+  81:MIDIController.cpp ****                 // midi.SendMessage(note_on, sizeof(note_on));
+  82:MIDIController.cpp ****                 
+  83:MIDIController.cpp ****                 // Note On for middle C with velocity 100
+  84:MIDIController.cpp ****             }
+  85:MIDIController.cpp ****             else {
+  86:MIDIController.cpp ****                 hw.SetLed(false);
+  87:MIDIController.cpp ****                 // Button released
+  88:MIDIController.cpp ****                 // hw.PrintLine("Button released ");
+  89:MIDIController.cpp ****                 // button_pressed = false;
+  90:MIDIController.cpp ****                 uint8_t note_off[3] = {0x80, 60, 0};  // 0890 = Note Off channel 0, middle C, veloc
+ 364              		.loc 10 90 25 view .LVU84
+ 365 008c 3380     		strh	r3, [r6]	@ movhi
+ 366              	.LBB280:
+ 367              	.LBB281:
+ 368              	.LBB282:
  170:../../libDaisy/src/hid/midi.h ****         parser_.Init();
  171:../../libDaisy/src/hid/midi.h ****     }
  172:../../libDaisy/src/hid/midi.h **** 
@@ -1918,9 +1961,6 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  189:../../libDaisy/src/hid/midi.h ****             transport_.FlushRx();
  190:../../libDaisy/src/hid/midi.h ****             StartReceive();
  191:../../libDaisy/src/hid/midi.h ****         }
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 33
-
-
  192:../../libDaisy/src/hid/midi.h ****     }
  193:../../libDaisy/src/hid/midi.h **** 
  194:../../libDaisy/src/hid/midi.h ****     /** Checks if there are unhandled messages in the queue
@@ -1938,158 +1978,90 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  206:../../libDaisy/src/hid/midi.h ****     Send raw bytes as message
  207:../../libDaisy/src/hid/midi.h ****     */
  208:../../libDaisy/src/hid/midi.h ****     void SendMessage(uint8_t* bytes, size_t size)
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 34
+
+
  209:../../libDaisy/src/hid/midi.h ****     {
  210:../../libDaisy/src/hid/midi.h ****         transport_.Tx(bytes, size);
- 322              		.loc 6 210 22 view .LVU68
- 323 0062 02AC     		add	r4, sp, #8
- 324              	.LBE279:
- 325              	.LBE278:
- 326              	.LBE277:
-  81:MIDIController.cpp ****             if (useSerialLogger) {
- 327              		.loc 10 81 21 view .LVU69
- 328 0064 1B0C     		lsrs	r3, r3, #16
- 329              	.LBB284:
- 330              	.LBB282:
- 331              	.LBB280:
- 332              		.loc 6 210 22 view .LVU70
- 333 0066 1348     		ldr	r0, .L12+20
- 334 0068 2146     		mov	r1, r4
- 335 006a 0322     		movs	r2, #3
- 336              	.LBE280:
- 337              	.LBE282:
- 338              	.LBE284:
-  81:MIDIController.cpp ****             if (useSerialLogger) {
- 339              		.loc 10 81 21 view .LVU71
- 340 006c 8DF80A30 		strb	r3, [sp, #10]
-  82:MIDIController.cpp ****                 hw.Print("Midi message is: ");
- 341              		.loc 10 82 13 is_stmt 1 view .LVU72
- 342              	.LBB285:
-  89:MIDIController.cpp ****             }
- 343              		.loc 10 89 17 view .LVU73
- 344              	.LVL12:
- 345              	.LBB283:
- 346              	.LBI278:
+ 369              		.loc 6 210 22 view .LVU85
+ 370 008e 02AE     		add	r6, sp, #8
+ 371              	.LBE282:
+ 372              	.LBE281:
+ 373              	.LBE280:
+ 374              		.loc 10 90 25 view .LVU86
+ 375 0090 1B0C     		lsrs	r3, r3, #16
+ 376              	.LBB287:
+ 377              	.LBB285:
+ 378              	.LBB283:
+ 379              		.loc 6 210 22 view .LVU87
+ 380 0092 0322     		movs	r2, #3
+ 381 0094 0D48     		ldr	r0, .L14+28
+ 382 0096 3146     		mov	r1, r6
+ 383              	.LBE283:
+ 384              	.LBE285:
+ 385              	.LBE287:
+ 386              		.loc 10 90 25 view .LVU88
+ 387 0098 8DF80A30 		strb	r3, [sp, #10]
+  91:MIDIController.cpp ****                 if (useSerialLogger) {
+ 388              		.loc 10 91 17 is_stmt 1 view .LVU89
+ 389              	.LBB288:
+  92:MIDIController.cpp ****                     hw.Print("Midi message is: ");
+  93:MIDIController.cpp ****                     for (int i = 0; i < 3; i++) {
+  94:MIDIController.cpp ****                         hw.Print("%d ", note_off[i]);
+  95:MIDIController.cpp ****                     }
+  96:MIDIController.cpp ****                 }
+  97:MIDIController.cpp ****                 else {
+  98:MIDIController.cpp ****                     midi.SendMessage(note_off, sizeof(note_off));
+ 390              		.loc 10 98 21 view .LVU90
+ 391              	.LVL18:
+ 392              	.LBB286:
+ 393              	.LBI281:
  208:../../libDaisy/src/hid/midi.h ****     {
- 347              		.loc 6 208 10 view .LVU74
- 348              	.LBB281:
- 349              		.loc 6 210 22 is_stmt 0 view .LVU75
- 350 0070 FFF7FEFF 		bl	_ZN5daisy16MidiUsbTransport2TxEPhj
- 351              	.LVL13:
- 352              		.loc 6 210 22 view .LVU76
- 353              	.LBE281:
- 354              	.LBE283:
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 34
+ 394              		.loc 6 208 10 view .LVU91
+ 395              	.LBB284:
+ 396              		.loc 6 210 22 is_stmt 0 view .LVU92
+ 397 009c FFF7FEFF 		bl	_ZN5daisy16MidiUsbTransport2TxEPhj
+ 398              	.LVL19:
+ 399              		.loc 6 210 22 view .LVU93
+ 400 00a0 D9E7     		b	.L7
+ 401              	.L8:
+ 402              	.LBE284:
+ 403              	.LBE286:
+ 404              	.LBE288:
+  86:MIDIController.cpp ****                 // Button released
+ 405              		.loc 10 86 17 is_stmt 1 view .LVU94
+  86:MIDIController.cpp ****                 // Button released
+ 406              		.loc 10 86 26 is_stmt 0 view .LVU95
+ 407 00a2 0021     		movs	r1, #0
+ 408 00a4 0348     		ldr	r0, .L14+4
+ 409 00a6 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6SetLedEb
+ 410              	.LVL20:
+  90:MIDIController.cpp ****                 if (useSerialLogger) {
+ 411              		.loc 10 90 17 is_stmt 1 view .LVU96
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 35
 
 
- 355              	.LBE285:
- 356              	.LBE276:
- 357              	.LBE273:
- 103:MIDIController.cpp ****             if (useSerialLogger) {
- 104:MIDIController.cpp ****                 hw.Print("Midi message is: ");
- 105:MIDIController.cpp ****                 for (int i = 0; i < 3; i++) {
- 106:MIDIController.cpp ****                     hw.Print("%d ", note_off[i]);
- 107:MIDIController.cpp ****                 }
- 108:MIDIController.cpp ****             }
- 109:MIDIController.cpp ****             else {
- 110:MIDIController.cpp ****                 midi.SendMessage(note_off, sizeof(note_off));
- 111:MIDIController.cpp ****             }
- 112:MIDIController.cpp **** 
- 113:MIDIController.cpp ****             // hw.Print("Midi message is %d", note_off);
- 114:MIDIController.cpp ****             // midi.SendMessage(note_off, sizeof(note_off));
- 115:MIDIController.cpp ****             // midi.SendMessage(MidiEvent::NoteOff(60, 0)); // Note Off for middle C
- 116:MIDIController.cpp ****         }
- 117:MIDIController.cpp ****         hw.DelayMs(1);
- 358              		.loc 10 117 9 is_stmt 1 view .LVU77
- 359              		.loc 10 117 19 is_stmt 0 view .LVU78
- 360 0074 0121     		movs	r1, #1
- 361 0076 0B48     		ldr	r0, .L12+4
- 362 0078 FFF7FEFF 		bl	_ZN5daisy9DaisySeed7DelayMsEj
- 363              	.LVL14:
- 364              	.LBE291:
-  58:MIDIController.cpp ****     {
- 365              		.loc 10 58 5 is_stmt 1 view .LVU79
- 366              	.L7:
-  58:MIDIController.cpp ****     {
- 367              		.loc 10 58 5 view .LVU80
- 368              	.LBB292:
-  60:MIDIController.cpp ****         // hw.PrintLine("Logger is enabled");
- 369              		.loc 10 60 9 view .LVU81
-  60:MIDIController.cpp ****         // hw.PrintLine("Logger is enabled");
- 370              		.loc 10 60 51 is_stmt 0 view .LVU82
- 371 007c 03A8     		add	r0, sp, #12
- 372 007e FFF7FEFF 		bl	_ZN5daisy4GPIO4ReadEv
- 373              	.LVL15:
- 374              	.LBB287:
- 375              	.LBI269:
- 126:../../libDaisy/src/daisy_seed.h ****     {
- 376              		.loc 1 126 17 is_stmt 1 view .LVU83
- 377              	.LBE287:
-  60:MIDIController.cpp ****         // hw.PrintLine("Logger is enabled");
- 378              		.loc 10 60 51 is_stmt 0 view .LVU84
- 379 0082 0346     		mov	r3, r0
- 380              	.LVL16:
-  62:MIDIController.cpp ****         // Check button state
- 381              		.loc 10 62 9 is_stmt 1 view .LVU85
- 382              	.LBB288:
- 383              	.LBB271:
- 384              		.loc 1 128 23 is_stmt 0 view .LVU86
- 385 0084 0C49     		ldr	r1, .L12+24
- 386 0086 0D48     		ldr	r0, .L12+28
- 387              	.LBE271:
- 388              	.LBE288:
-  62:MIDIController.cpp ****         // Check button state
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 35
-
-
- 389              		.loc 10 62 21 view .LVU87
- 390 0088 002B     		cmp	r3, #0
- 391 008a E2D1     		bne	.L5
- 392              	.LVL17:
- 393              	.LBB289:
- 126:../../libDaisy/src/daisy_seed.h ****     {
- 394              		.loc 1 126 17 is_stmt 1 view .LVU88
- 395              	.LBB272:
- 396              		.loc 1 128 23 is_stmt 0 view .LVU89
- 397 008c 0C49     		ldr	r1, .L12+32
- 398 008e 0B48     		ldr	r0, .L12+28
- 399 0090 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
- 400              	.LVL18:
- 401              		.loc 1 128 23 view .LVU90
- 402              	.LBE272:
- 403              	.LBE289:
-  65:MIDIController.cpp ****         {
- 404              		.loc 10 65 9 is_stmt 1 view .LVU91
- 405              	.LBB290:
- 406              	.LBB286:
-  67:MIDIController.cpp ****             // hw.PrintLine("Button pressed ");
- 407              		.loc 10 67 13 view .LVU92
-  67:MIDIController.cpp ****             // hw.PrintLine("Button pressed ");
- 408              		.loc 10 67 22 is_stmt 0 view .LVU93
- 409 0094 0121     		movs	r1, #1
- 410 0096 0348     		ldr	r0, .L12+4
- 411 0098 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6SetLedEb
- 412              	.LVL19:
-  81:MIDIController.cpp ****             if (useSerialLogger) {
- 413              		.loc 10 81 13 is_stmt 1 view .LVU94
-  81:MIDIController.cpp ****             if (useSerialLogger) {
- 414              		.loc 10 81 21 is_stmt 0 view .LVU95
- 415 009c 2B68     		ldr	r3, [r5]
- 416 009e DFE7     		b	.L11
- 417              	.L13:
- 418              		.align	2
- 419              	.L12:
- 420 00a0 00000000 		.word	midi
- 421 00a4 00000000 		.word	.LANCHOR0
- 422 00a8 24000000 		.word	.LC2
- 423 00ac 00000000 		.word	.LANCHOR1
- 424 00b0 28000000 		.word	.LC4
- 425 00b4 04000000 		.word	midi+4
- 426 00b8 00000000 		.word	.LC0
- 427 00bc 08000000 		.word	.LC1
- 428 00c0 1C000000 		.word	.LC3
- 429              	.LBE286:
- 430              	.LBE290:
- 431              	.LBE292:
+  90:MIDIController.cpp ****                 if (useSerialLogger) {
+ 412              		.loc 10 90 25 is_stmt 0 view .LVU97
+ 413 00aa D8F80030 		ldr	r3, [r8]
+ 414 00ae EDE7     		b	.L13
+ 415              	.L15:
+ 416              		.align	2
+ 417              	.L14:
+ 418 00b0 00000000 		.word	midi
+ 419 00b4 00000000 		.word	.LANCHOR0
+ 420 00b8 24000000 		.word	.LC3
+ 421 00bc 00000000 		.word	.LANCHOR1
+ 422 00c0 08000000 		.word	.LC1
+ 423 00c4 00000000 		.word	.LC0
+ 424 00c8 10000000 		.word	.LC2
+ 425 00cc 04000000 		.word	midi+4
+ 426 00d0 28000000 		.word	.LC4
+ 427              	.LBE279:
+ 428              	.LBE289:
+ 429              	.LBE274:
+ 430              	.LBE273:
+ 431              	.LBE270:
  432              		.cfi_endproc
  433              	.LFE4682:
  435              		.section	.text.startup._GLOBAL__sub_I_hw,"ax",%progbits
@@ -2098,29 +2070,38 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  438              		.syntax unified
  439              		.thumb
  440              		.thumb_func
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 36
-
-
  442              	_GLOBAL__sub_I_hw:
  443              	.LFB5272:
- 118:MIDIController.cpp ****     }
- 119:MIDIController.cpp **** }...
- 444              		.loc 10 119 1 is_stmt 1 view -0
+  99:MIDIController.cpp ****                 }
+ 100:MIDIController.cpp **** 
+ 101:MIDIController.cpp ****                 // hw.Print("Midi message is %d", note_off);
+ 102:MIDIController.cpp ****                 // midi.SendMessage(note_off, sizeof(note_off));
+ 103:MIDIController.cpp ****                 // midi.SendMessage(MidiEvent::NoteOff(60, 0)); // Note Off for middle C
+ 104:MIDIController.cpp ****             }
+ 105:MIDIController.cpp ****             last_button_state = current_button_state;
+ 106:MIDIController.cpp ****             
+ 107:MIDIController.cpp ****         }
+ 108:MIDIController.cpp ****     }
+ 109:MIDIController.cpp **** }...
+ 444              		.loc 10 109 1 is_stmt 1 view -0
  445              		.cfi_startproc
  446              		@ args = 0, pretend = 0, frame = 0
  447              		@ frame_needed = 0, uses_anonymous_args = 0
- 448              	.LBB331:
- 449              	.LBI331:
- 450              		.loc 10 119 1 view .LVU97
- 451              	.LVL20:
- 452              	.LBB332:
- 453              	.LBB333:
- 454              	.LBI333:
+ 448              	.LBB328:
+ 449              	.LBI328:
+ 450              		.loc 10 109 1 view .LVU99
+ 451              	.LVL21:
+ 452              	.LBB329:
+ 453              	.LBB330:
+ 454              	.LBI330:
   21:../../libDaisy/src/daisy_seed.h ****     ~DaisySeed() {}
- 455              		.loc 1 21 5 view .LVU98
- 456              	.LBB334:
- 457              	.LBB335:
- 458              	.LBI335:
+ 455              		.loc 1 21 5 view .LVU100
+ 456              	.LBB331:
+ 457              	.LBB332:
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 36
+
+
+ 458              	.LBI332:
  459              		.file 13 "../../libDaisy/src/per/qspi.h"
    1:../../libDaisy/src/per/qspi.h **** #ifndef DSY_QSPI
    2:../../libDaisy/src/per/qspi.h **** #define DSY_QSPI /**< Macro */
@@ -2158,9 +2139,6 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   34:../../libDaisy/src/per/qspi.h ****     {
   35:../../libDaisy/src/per/qspi.h ****         OK = 0,
   36:../../libDaisy/src/per/qspi.h ****         ERR
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 37
-
-
   37:../../libDaisy/src/per/qspi.h ****     };
   38:../../libDaisy/src/per/qspi.h **** 
   39:../../libDaisy/src/per/qspi.h ****     /** Indicates the current status of the module. 
@@ -2180,6 +2158,9 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   53:../../libDaisy/src/per/qspi.h ****         E_INVALID_MODE,
   54:../../libDaisy/src/per/qspi.h ****     };
   55:../../libDaisy/src/per/qspi.h **** 
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 37
+
+
   56:../../libDaisy/src/per/qspi.h ****     /** Configuration structure for interfacing with QSPI Driver */
   57:../../libDaisy/src/per/qspi.h ****     struct Config
   58:../../libDaisy/src/per/qspi.h ****     {
@@ -2218,9 +2199,6 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   91:../../libDaisy/src/per/qspi.h **** 
   92:../../libDaisy/src/per/qspi.h ****         Device device;
   93:../../libDaisy/src/per/qspi.h ****         Mode   mode;
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 38
-
-
   94:../../libDaisy/src/per/qspi.h ****     };
   95:../../libDaisy/src/per/qspi.h **** 
   96:../../libDaisy/src/per/qspi.h ****     /** 
@@ -2240,6 +2218,9 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  110:../../libDaisy/src/per/qspi.h ****         This should be called before reinitializing QSPI in a different mode.
  111:../../libDaisy/src/per/qspi.h ****         \return Result::OK or Result::ERR
  112:../../libDaisy/src/per/qspi.h ****         */
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 38
+
+
  113:../../libDaisy/src/per/qspi.h ****     Result DeInit();
  114:../../libDaisy/src/per/qspi.h **** 
  115:../../libDaisy/src/per/qspi.h ****     /** 
@@ -2278,9 +2259,6 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  148:../../libDaisy/src/per/qspi.h ****         \return Result::OK or Result::ERR
  149:../../libDaisy/src/per/qspi.h ****         */
  150:../../libDaisy/src/per/qspi.h ****     Result EraseSector(uint32_t address);
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 39
-
-
  151:../../libDaisy/src/per/qspi.h **** 
  152:../../libDaisy/src/per/qspi.h ****     /** Returns the current class status. Useful for debugging.
  153:../../libDaisy/src/per/qspi.h ****      *  \returns Status
@@ -2297,86 +2275,89 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  164:../../libDaisy/src/per/qspi.h ****     void* GetData(uint32_t offset = 0);
  165:../../libDaisy/src/per/qspi.h **** 
  166:../../libDaisy/src/per/qspi.h ****     QSPIHandle() : pimpl_(nullptr) {}
- 460              		.loc 13 166 5 view .LVU99
- 461              	.LBE335:
- 462              	.LBE334:
- 463              	.LBE333:
- 464              	.LBE332:
- 465              	.LBE331:
- 466              		.loc 10 119 1 is_stmt 0 view .LVU100
+ 460              		.loc 13 166 5 view .LVU101
+ 461              	.LBE332:
+ 462              	.LBE331:
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 39
+
+
+ 463              	.LBE330:
+ 464              	.LBE329:
+ 465              	.LBE328:
+ 466              		.loc 10 109 1 is_stmt 0 view .LVU102
  467 0000 38B5     		push	{r3, r4, r5, lr}
  468              		.cfi_def_cfa_offset 16
  469              		.cfi_offset 3, -16
  470              		.cfi_offset 4, -12
  471              		.cfi_offset 5, -8
  472              		.cfi_offset 14, -4
- 473              	.LBB383:
- 474              	.LBB381:
- 475              	.LBB356:
- 476              	.LBB354:
- 477              	.LBB340:
- 478              	.LBB336:
- 479              	.LBB337:
- 480              		.loc 13 166 34 view .LVU101
- 481 0002 1248     		ldr	r0, .L16
+ 473              	.LBB380:
+ 474              	.LBB378:
+ 475              	.LBB353:
+ 476              	.LBB351:
+ 477              	.LBB337:
+ 478              	.LBB333:
+ 479              	.LBB334:
+ 480              		.loc 13 166 34 view .LVU103
+ 481 0002 1248     		ldr	r0, .L18
  482 0004 0024     		movs	r4, #0
- 483              	.LBE337:
- 484              	.LBE336:
- 485              	.LBE340:
- 486              	.LBE354:
- 487              	.LBE356:
+ 483              	.LBE334:
+ 484              	.LBE333:
+ 485              	.LBE337:
+ 486              	.LBE351:
+ 487              	.LBE353:
   10:MIDIController.cpp **** DaisySeed hw;
- 488              		.loc 10 10 11 view .LVU102
- 489 0006 124A     		ldr	r2, .L16+4
- 490              	.LBB357:
- 491              	.LBB358:
+ 488              		.loc 10 10 11 view .LVU104
+ 489 0006 124A     		ldr	r2, .L18+4
+ 490              	.LBB354:
+ 491              	.LBB355:
  155:../../libDaisy/src/hid/midi.h ****     ~MidiHandler() {}
- 492              		.loc 6 155 5 view .LVU103
+ 492              		.loc 6 155 5 view .LVU105
  493 0008 40F20F75 		movw	r5, #1807
- 494              	.LBE358:
- 495              	.LBE357:
+ 494              	.LBE355:
+ 495              	.LBE354:
   10:MIDIController.cpp **** DaisySeed hw;
- 496              		.loc 10 10 11 view .LVU104
- 497 000c 1149     		ldr	r1, .L16+8
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 40
-
-
- 498              	.LBB378:
- 499              	.LBB355:
- 500              	.LBB341:
- 501              	.LBB339:
- 502              	.LBB338:
- 503              		.loc 13 166 34 view .LVU105
+ 496              		.loc 10 10 11 view .LVU106
+ 497 000c 1149     		ldr	r1, .L18+8
+ 498              	.LBB375:
+ 499              	.LBB352:
+ 500              	.LBB338:
+ 501              	.LBB336:
+ 502              	.LBB335:
+ 503              		.loc 13 166 34 view .LVU107
  504 000e 0460     		str	r4, [r0]
- 505              	.LVL21:
- 506              		.loc 13 166 34 view .LVU106
- 507              	.LBE338:
- 508              	.LBE339:
- 509              	.LBE341:
- 510              	.LBB342:
- 511              	.LBI342:
+ 505              	.LVL22:
+ 506              		.loc 13 166 34 view .LVU108
+ 507              	.LBE335:
+ 508              	.LBE336:
+ 509              	.LBE338:
+ 510              	.LBB339:
+ 511              	.LBI339:
   95:../../libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
- 512              		.loc 5 95 5 is_stmt 1 view .LVU107
- 513              	.LBB343:
- 514              	.LBB344:
+ 512              		.loc 5 95 5 is_stmt 1 view .LVU109
+ 513              	.LBB340:
+ 514              	.LBB341:
   95:../../libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
- 515              		.loc 5 95 35 is_stmt 0 view .LVU108
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 40
+
+
+ 515              		.loc 5 95 35 is_stmt 0 view .LVU110
  516 0010 4461     		str	r4, [r0, #20]
- 517              	.LVL22:
+ 517              	.LVL23:
   95:../../libDaisy/src/hid/audio.h ****     ~AudioHandle() {}
- 518              		.loc 5 95 35 view .LVU109
- 519              	.LBE344:
- 520              	.LBE343:
- 521              	.LBE342:
- 522              	.LBB345:
- 523              	.LBI345:
+ 518              		.loc 5 95 35 view .LVU111
+ 519              	.LBE341:
+ 520              	.LBE340:
+ 521              	.LBE339:
+ 522              	.LBB342:
+ 523              	.LBI342:
  109:../../libDaisy/src/per/adc.h ****     ~AdcHandle() {}
- 524              		.loc 4 109 5 is_stmt 1 view .LVU110
+ 524              		.loc 4 109 5 is_stmt 1 view .LVU112
  109:../../libDaisy/src/per/adc.h ****     ~AdcHandle() {}
- 525              		.loc 4 109 5 is_stmt 0 view .LVU111
- 526              	.LBE345:
- 527              	.LBB346:
- 528              	.LBI346:
+ 525              		.loc 4 109 5 is_stmt 0 view .LVU113
+ 526              	.LBE342:
+ 527              	.LBB343:
+ 528              	.LBI343:
  529              		.file 14 "../../libDaisy/src/per/dac.h"
    1:../../libDaisy/src/per/dac.h **** #pragma once
    2:../../libDaisy/src/per/dac.h **** #ifndef DSY_DAC_H
@@ -2398,9 +2379,6 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   18:../../libDaisy/src/per/dac.h ****  ** other modules. However, it is still important to not try to use the DAC pins for anything else.
   19:../../libDaisy/src/per/dac.h ****  ** DAC Channel 1 is on PA4, and DAC Channel 2 is on PA5
   20:../../libDaisy/src/per/dac.h ****  ***/
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 41
-
-
   21:../../libDaisy/src/per/dac.h **** class DacHandle
   22:../../libDaisy/src/per/dac.h **** {
   23:../../libDaisy/src/per/dac.h ****   public:
@@ -2420,6 +2398,9 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   37:../../libDaisy/src/per/dac.h ****     };
   38:../../libDaisy/src/per/dac.h **** 
   39:../../libDaisy/src/per/dac.h ****     /** Sets the Mode for the DAC channels.
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 41
+
+
   40:../../libDaisy/src/per/dac.h ****      **
   41:../../libDaisy/src/per/dac.h ****      ** Polling mode uses the blocking mode to transmit a single value at a time.
   42:../../libDaisy/src/per/dac.h ****      **
@@ -2458,9 +2439,6 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   75:../../libDaisy/src/per/dac.h ****          ** otherwise the driver will attempt meet the target.*/
   76:../../libDaisy/src/per/dac.h ****         uint32_t target_samplerate;
   77:../../libDaisy/src/per/dac.h **** 
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 42
-
-
   78:../../libDaisy/src/per/dac.h ****         Channel     chn;
   79:../../libDaisy/src/per/dac.h ****         Mode        mode;
   80:../../libDaisy/src/per/dac.h ****         BitDepth    bitdepth;
@@ -2468,32 +2446,35 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   82:../../libDaisy/src/per/dac.h ****     };
   83:../../libDaisy/src/per/dac.h **** 
   84:../../libDaisy/src/per/dac.h ****     DacHandle() : pimpl_(nullptr) {}
- 530              		.loc 14 84 5 is_stmt 1 view .LVU112
- 531              	.LBB347:
- 532              	.LBB348:
- 533              		.loc 14 84 33 is_stmt 0 view .LVU113
+ 530              		.loc 14 84 5 is_stmt 1 view .LVU114
+ 531              	.LBB344:
+ 532              	.LBB345:
+ 533              		.loc 14 84 33 is_stmt 0 view .LVU115
  534 0012 0462     		str	r4, [r0, #32]
- 535              	.LVL23:
- 536              		.loc 14 84 33 view .LVU114
- 537              	.LBE348:
- 538              	.LBE347:
- 539              	.LBE346:
- 540              	.LBB349:
- 541              	.LBI349:
+ 535              	.LVL24:
+ 536              		.loc 14 84 33 view .LVU116
+ 537              	.LBE345:
+ 538              	.LBE344:
+ 539              	.LBE343:
+ 540              	.LBB346:
+ 541              	.LBI346:
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 42
+
+
   40:../../libDaisy/src/hid/usb.h **** 
- 542              		.loc 3 40 5 is_stmt 1 view .LVU115
+ 542              		.loc 3 40 5 is_stmt 1 view .LVU117
   40:../../libDaisy/src/hid/usb.h **** 
- 543              		.loc 3 40 5 is_stmt 0 view .LVU116
- 544              	.LBE349:
- 545              	.LBB350:
- 546              	.LBI350:
+ 543              		.loc 3 40 5 is_stmt 0 view .LVU118
+ 544              	.LBE346:
+ 545              	.LBB347:
+ 546              	.LBI347:
   96:../../libDaisy/src/sys/system.h ****     ~System() {}
- 547              		.loc 2 96 5 is_stmt 1 view .LVU117
+ 547              		.loc 2 96 5 is_stmt 1 view .LVU119
   96:../../libDaisy/src/sys/system.h ****     ~System() {}
- 548              		.loc 2 96 5 is_stmt 0 view .LVU118
- 549              	.LBE350:
- 550              	.LBB351:
- 551              	.LBI351:
+ 548              		.loc 2 96 5 is_stmt 0 view .LVU120
+ 549              	.LBE347:
+ 550              	.LBB348:
+ 551              	.LBI348:
  552              		.file 15 "../../libDaisy/src/per/sai.h"
    1:../../libDaisy/src/per/sai.h **** #pragma once
    2:../../libDaisy/src/per/sai.h **** #ifndef DSY_SAI_H
@@ -2518,9 +2499,6 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   21:../../libDaisy/src/per/sai.h ****  * Use SAI Handle like this:
   22:../../libDaisy/src/per/sai.h ****  * 
   23:../../libDaisy/src/per/sai.h ****  *  SaiHandle::Config sai_config;
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 43
-
-
   24:../../libDaisy/src/per/sai.h ****  *  sai_config.periph          = SaiHandle::Config::Peripheral::SAI_1;
   25:../../libDaisy/src/per/sai.h ****  *  sai_config.sr              = SaiHandle::Config::SampleRate::SAI_48KHZ;
   26:../../libDaisy/src/per/sai.h ****  *  sai_config.bit_depth       = SaiHandle::Config::BitDepth::SAI_24BIT;
@@ -2540,6 +2518,9 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   40:../../libDaisy/src/per/sai.h ****  *  sai.StartDma(. . .);
   41:../../libDaisy/src/per/sai.h ****  */
   42:../../libDaisy/src/per/sai.h **** class SaiHandle
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 43
+
+
   43:../../libDaisy/src/per/sai.h **** {
   44:../../libDaisy/src/per/sai.h ****   public:
   45:../../libDaisy/src/per/sai.h ****     /** Contains settings for initialising an SAI Interface */
@@ -2578,9 +2559,6 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   78:../../libDaisy/src/per/sai.h ****         {
   79:../../libDaisy/src/per/sai.h ****             MASTER,
   80:../../libDaisy/src/per/sai.h ****             SLAVE,
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 44
-
-
   81:../../libDaisy/src/per/sai.h ****         };
   82:../../libDaisy/src/per/sai.h **** 
   83:../../libDaisy/src/per/sai.h ****         /** Specifies the direction for each peripheral block. */
@@ -2600,6 +2578,9 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
   97:../../libDaisy/src/per/sai.h ****         Sync       a_sync, b_sync;
   98:../../libDaisy/src/per/sai.h ****         Direction  a_dir, b_dir;
   99:../../libDaisy/src/per/sai.h ****     };
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 44
+
+
  100:../../libDaisy/src/per/sai.h **** 
  101:../../libDaisy/src/per/sai.h ****     /** Return values for SAI functions */
  102:../../libDaisy/src/per/sai.h ****     enum class Result
@@ -2609,158 +2590,155 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  106:../../libDaisy/src/per/sai.h ****     };
  107:../../libDaisy/src/per/sai.h **** 
  108:../../libDaisy/src/per/sai.h ****     SaiHandle() : pimpl_(nullptr) {}
- 553              		.loc 15 108 5 is_stmt 1 view .LVU119
- 554              	.LBB352:
- 555              	.LBB353:
- 556              		.loc 15 108 33 is_stmt 0 view .LVU120
+ 553              		.loc 15 108 5 is_stmt 1 view .LVU121
+ 554              	.LBB349:
+ 555              	.LBB350:
+ 556              		.loc 15 108 33 is_stmt 0 view .LVU122
  557 0014 C463     		str	r4, [r0, #60]
- 558              	.LVL24:
- 559              		.loc 15 108 33 view .LVU121
- 560              	.LBE353:
- 561              	.LBE352:
- 562              	.LBE351:
- 563              	.LBE355:
- 564              	.LBE378:
+ 558              	.LVL25:
+ 559              		.loc 15 108 33 view .LVU123
+ 560              	.LBE350:
+ 561              	.LBE349:
+ 562              	.LBE348:
+ 563              	.LBE352:
+ 564              	.LBE375:
   10:MIDIController.cpp **** DaisySeed hw;
- 565              		.loc 10 10 11 view .LVU122
+ 565              		.loc 10 10 11 view .LVU124
  566 0016 FFF7FEFF 		bl	__aeabi_atexit
- 567              	.LVL25:
- 568              	.LBB379:
- 569              	.LBI357:
+ 567              	.LVL26:
+ 568              	.LBB376:
+ 569              	.LBI354:
  155:../../libDaisy/src/hid/midi.h ****     ~MidiHandler() {}
- 570              		.loc 6 155 5 is_stmt 1 view .LVU123
- 571              	.LBB376:
- 572              	.LBB359:
- 573              	.LBI359:
+ 570              		.loc 6 155 5 is_stmt 1 view .LVU125
+ 571              	.LBB373:
+ 572              	.LBB356:
+ 573              	.LBI356:
  158:../../libDaisy/src/hid/midi.h ****     {
- 574              		.loc 6 158 12 view .LVU124
- 575              	.LBB360:
- 576              	.LBI360:
+ 574              		.loc 6 158 12 view .LVU126
+ 575              	.LBB357:
+ 576              	.LBI357:
   43:../../libDaisy/src/hid/usb_midi.h ****     };
- 577              		.loc 9 43 9 view .LVU125
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 45
+ 577              		.loc 9 43 9 view .LVU127
+  43:../../libDaisy/src/hid/usb_midi.h ****     };
+ 578              		.loc 9 43 9 is_stmt 0 view .LVU128
+ 579              	.LBE357:
+ 580              	.LBE356:
+ 581              	.LBB358:
+ 582              	.LBI358:
+  55:../../libDaisy/src/hid/usb_midi.h ****     ~MidiUsbTransport() {}
+ 583              		.loc 9 55 5 is_stmt 1 view .LVU129
+  55:../../libDaisy/src/hid/usb_midi.h ****     ~MidiUsbTransport() {}
+ 584              		.loc 9 55 5 is_stmt 0 view .LVU130
+ 585              	.LBE358:
+ 586              	.LBB359:
+ 587              	.LBI359:
+  18:../../libDaisy/src/hid/midi_parser.h ****     ~MidiParser() {}
+ 588              		.loc 8 18 5 is_stmt 1 view .LVU131
+  18:../../libDaisy/src/hid/midi_parser.h ****     ~MidiParser() {}
+ 589              		.loc 8 18 5 is_stmt 0 view .LVU132
+ 590              	.LBE359:
+ 591              	.LBB360:
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 45
 
 
-  43:../../libDaisy/src/hid/usb_midi.h ****     };
- 578              		.loc 9 43 9 is_stmt 0 view .LVU126
- 579              	.LBE360:
- 580              	.LBE359:
- 581              	.LBB361:
- 582              	.LBI361:
-  55:../../libDaisy/src/hid/usb_midi.h ****     ~MidiUsbTransport() {}
- 583              		.loc 9 55 5 is_stmt 1 view .LVU127
-  55:../../libDaisy/src/hid/usb_midi.h ****     ~MidiUsbTransport() {}
- 584              		.loc 9 55 5 is_stmt 0 view .LVU128
- 585              	.LBE361:
- 586              	.LBB362:
- 587              	.LBI362:
-  18:../../libDaisy/src/hid/midi_parser.h ****     ~MidiParser() {}
- 588              		.loc 8 18 5 is_stmt 1 view .LVU129
-  18:../../libDaisy/src/hid/midi_parser.h ****     ~MidiParser() {}
- 589              		.loc 8 18 5 is_stmt 0 view .LVU130
- 590              	.LBE362:
- 591              	.LBB363:
- 592              	.LBI363:
+ 592              	.LBI360:
  299:../../libDaisy/src/util/FIFO.h **** {
  300:../../libDaisy/src/util/FIFO.h ****   public:
  301:../../libDaisy/src/util/FIFO.h ****     /** Creates an empty FIFO */
  302:../../libDaisy/src/util/FIFO.h ****     FIFO() : FIFOBase<T>(buffer_, capacity + 1) {}
- 593              		.loc 7 302 5 is_stmt 1 view .LVU131
- 594              	.LBB364:
- 595              	.LBB365:
- 596              	.LBI365:
+ 593              		.loc 7 302 5 is_stmt 1 view .LVU133
+ 594              	.LBB361:
+ 595              	.LBB362:
+ 596              	.LBI362:
   14:../../libDaisy/src/util/FIFO.h ****     : buffer_(buffer), bufferSize_(bufferSize), bufferIn_(0), bufferOut_(0)
- 597              		.loc 7 14 5 view .LVU132
- 598              	.LBE365:
- 599              	.LBE364:
- 600              	.LBE363:
+ 597              		.loc 7 14 5 view .LVU134
+ 598              	.LBE362:
+ 599              	.LBE361:
+ 600              	.LBE360:
  155:../../libDaisy/src/hid/midi.h ****     ~MidiHandler() {}
- 601              		.loc 6 155 5 is_stmt 0 view .LVU133
- 602 001a 0F48     		ldr	r0, .L16+12
- 603 001c 0F4B     		ldr	r3, .L16+16
+ 601              		.loc 6 155 5 is_stmt 0 view .LVU135
+ 602 001a 0F48     		ldr	r0, .L18+12
+ 603 001c 0F4B     		ldr	r3, .L18+16
  604 001e 4FF44071 		mov	r1, #768
- 605              	.LBE376:
- 606              	.LBE379:
+ 605              	.LBE373:
+ 606              	.LBE376:
   11:MIDIController.cpp **** MidiUsbHandler midi;
- 607              		.loc 10 11 16 view .LVU134
- 608 0022 0B4A     		ldr	r2, .L16+4
- 609              	.LBB380:
- 610              	.LBB377:
+ 607              		.loc 10 11 16 view .LVU136
+ 608 0022 0B4A     		ldr	r2, .L18+4
+ 609              	.LBB377:
+ 610              	.LBB374:
  155:../../libDaisy/src/hid/midi.h ****     ~MidiHandler() {}
- 611              		.loc 6 155 5 view .LVU135
+ 611              		.loc 6 155 5 view .LVU137
  612 0024 C0F89C30 		str	r3, [r0, #156]
- 613              	.LBB374:
- 614              	.LBB372:
- 615              	.LBB370:
- 616              	.LBB366:
- 617              	.LBB367:
+ 613              	.LBB371:
+ 614              	.LBB369:
+ 615              	.LBB367:
+ 616              	.LBB363:
+ 617              	.LBB364:
   15:../../libDaisy/src/util/FIFO.h ****     {
- 618              		.loc 7 15 75 view .LVU136
+ 618              		.loc 7 15 75 view .LVU138
  619 0028 00F1B403 		add	r3, r0, #180
  620 002c C0E92853 		strd	r5, r3, [r0, #160]
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 46
-
-
  621 0030 40F20113 		movw	r3, #257
- 622              	.LBE367:
- 623              	.LBE366:
- 624              	.LBE370:
- 625              	.LBE372:
- 626              	.LBE374:
+ 622              	.LBE364:
+ 623              	.LBE363:
+ 624              	.LBE367:
+ 625              	.LBE369:
+ 626              	.LBE371:
  155:../../libDaisy/src/hid/midi.h ****     ~MidiHandler() {}
- 627              		.loc 6 155 5 view .LVU137
+ 627              		.loc 6 155 5 view .LVU139
  628 0034 C0E90014 		strd	r1, r4, [r0]
- 629              	.LBB375:
- 630              	.LBB373:
- 631              	.LBB371:
- 632              	.LBB369:
- 633              	.LBB368:
+ 629              	.LBB372:
+ 630              	.LBB370:
+ 631              	.LBB368:
+ 632              	.LBB366:
+ 633              	.LBB365:
   15:../../libDaisy/src/util/FIFO.h ****     {
- 634              		.loc 7 15 75 view .LVU138
+ 634              		.loc 7 15 75 view .LVU140
  635 0038 C0E92B44 		strd	r4, r4, [r0, #172]
- 636              	.LVL26:
+ 636              	.LVL27:
   15:../../libDaisy/src/util/FIFO.h ****     {
- 637              		.loc 7 15 75 view .LVU139
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 46
+
+
+ 637              		.loc 7 15 75 view .LVU141
  638 003c C0F8A830 		str	r3, [r0, #168]
- 639              	.LBE368:
- 640              	.LBE369:
- 641              	.LBE371:
- 642              	.LBE373:
- 643              	.LBE375:
- 644              	.LBE377:
- 645              	.LBE380:
+ 639              	.LBE365:
+ 640              	.LBE366:
+ 641              	.LBE368:
+ 642              	.LBE370:
+ 643              	.LBE372:
+ 644              	.LBE374:
+ 645              	.LBE377:
   11:MIDIController.cpp **** MidiUsbHandler midi;
- 646              		.loc 10 11 16 view .LVU140
- 647 0040 0749     		ldr	r1, .L16+20
- 648              	.LBE381:
- 649              	.LBE383:
- 650              		.loc 10 119 1 view .LVU141
+ 646              		.loc 10 11 16 view .LVU142
+ 647 0040 0749     		ldr	r1, .L18+20
+ 648              	.LBE378:
+ 649              	.LBE380:
+ 650              		.loc 10 109 1 view .LVU143
  651 0042 BDE83840 		pop	{r3, r4, r5, lr}
  652              		.cfi_restore 14
  653              		.cfi_restore 5
  654              		.cfi_restore 4
  655              		.cfi_restore 3
  656              		.cfi_def_cfa_offset 0
- 657              	.LBB384:
- 658              	.LBB382:
+ 657              	.LBB381:
+ 658              	.LBB379:
   11:MIDIController.cpp **** MidiUsbHandler midi;
- 659              		.loc 10 11 16 view .LVU142
+ 659              		.loc 10 11 16 view .LVU144
  660 0046 FFF7FEBF 		b	__aeabi_atexit
- 661              	.LVL27:
- 662              	.L17:
+ 661              	.LVL28:
+ 662              	.L19:
  663 004a 00BF     		.align	2
- 664              	.L16:
+ 664              	.L18:
  665 004c 00000000 		.word	.LANCHOR0
  666 0050 00000000 		.word	__dso_handle
  667 0054 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
  668 0058 00000000 		.word	midi
  669 005c 0080707F 		.word	2138079232
  670 0060 00000000 		.word	_ZN5daisy11MidiHandlerINS_16MidiUsbTransportEED1Ev
- 671              	.LBE382:
- 672              	.LBE384:
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 47
-
-
+ 671              	.LBE379:
+ 672              	.LBE381:
  673              		.cfi_endproc
  674              	.LFE5272:
  676              		.section	.init_array,"aw",%init_array
@@ -2780,6 +2758,9 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  688              		.section	.bss.midi,"aw",%nobits
  689              		.align	2
  692              	midi:
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 47
+
+
  693 0000 00000000 		.space	37188
  693      00000000 
  693      00000000 
@@ -2818,9 +2799,6 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  726              		.file 38 "/Library/DaisyToolchain/0.2.0/arm/arm-none-eabi/include/c++/10.3.1/bits/predefined_ops.h
  727              		.file 39 "/Library/DaisyToolchain/0.2.0/arm/arm-none-eabi/include/sys/_types.h"
  728              		.file 40 "/Library/DaisyToolchain/0.2.0/arm/arm-none-eabi/include/sys/reent.h"
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 48
-
-
  729              		.file 41 "/Library/DaisyToolchain/0.2.0/arm/arm-none-eabi/include/sys/lock.h"
  730              		.file 42 "/Library/DaisyToolchain/0.2.0/arm/arm-none-eabi/include/math.h"
  731              		.file 43 "/Library/DaisyToolchain/0.2.0/arm/arm-none-eabi/include/stdlib.h"
@@ -2840,33 +2818,36 @@ ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 1
  745              		.file 57 "../../DaisySP/Source/Utility/dsp.h"
  746              		.file 58 "/Library/DaisyToolchain/0.2.0/arm/arm-none-eabi/include/wchar.h"
  747              		.file 59 "/Library/DaisyToolchain/0.2.0/arm/arm-none-eabi/include/locale.h"
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 48
+
+
  748              		.file 60 "../../libDaisy/src/dev/sr_595.h"
  749              		.file 61 "<built-in>"
-ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s 			page 49
+ARM GAS  /var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s 			page 49
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 MIDIController.cpp
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:19     .text._ZN5daisy9DaisySeedD2Ev:0000000000000000 $t
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:26     .text._ZN5daisy9DaisySeedD2Ev:0000000000000000 _ZN5daisy9DaisySeedD2Ev
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:26     .text._ZN5daisy9DaisySeedD2Ev:0000000000000000 _ZN5daisy9DaisySeedD1Ev
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:67     .text._ZN5daisy11MidiHandlerINS_16MidiUsbTransportEED2Ev:0000000000000000 $t
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:74     .text._ZN5daisy11MidiHandlerINS_16MidiUsbTransportEED2Ev:0000000000000000 _ZN5daisy11MidiHandlerINS_16MidiUsbTransportEED2Ev
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:74     .text._ZN5daisy11MidiHandlerINS_16MidiUsbTransportEED2Ev:0000000000000000 _ZN5daisy11MidiHandlerINS_16MidiUsbTransportEED1Ev
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:113    .rodata.main.str1.4:0000000000000000 $d
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:129    .text.startup.main:0000000000000000 $t
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:136    .text.startup.main:0000000000000000 main
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:420    .text.startup.main:00000000000000a0 $d
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:692    .bss.midi:0000000000000000 midi
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:436    .text.startup._GLOBAL__sub_I_hw:0000000000000000 $t
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:442    .text.startup._GLOBAL__sub_I_hw:0000000000000000 _GLOBAL__sub_I_hw
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:665    .text.startup._GLOBAL__sub_I_hw:000000000000004c $d
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:677    .init_array:0000000000000000 $d
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:686    .bss.hw:0000000000000000 hw
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:682    .bss.hw:0000000000000000 $d
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:689    .bss.midi:0000000000000000 $d
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:695    .rodata._ZN5daisy4seedL2D0E:0000000000000000 $d
-/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//ccZXW83k.s:699    .rodata._ZN5daisy4seedL2D0E:0000000000000000 _ZN5daisy4seedL2D0E
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:19     .text._ZN5daisy9DaisySeedD2Ev:0000000000000000 $t
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:26     .text._ZN5daisy9DaisySeedD2Ev:0000000000000000 _ZN5daisy9DaisySeedD2Ev
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:26     .text._ZN5daisy9DaisySeedD2Ev:0000000000000000 _ZN5daisy9DaisySeedD1Ev
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:67     .text._ZN5daisy11MidiHandlerINS_16MidiUsbTransportEED2Ev:0000000000000000 $t
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:74     .text._ZN5daisy11MidiHandlerINS_16MidiUsbTransportEED2Ev:0000000000000000 _ZN5daisy11MidiHandlerINS_16MidiUsbTransportEED2Ev
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:74     .text._ZN5daisy11MidiHandlerINS_16MidiUsbTransportEED2Ev:0000000000000000 _ZN5daisy11MidiHandlerINS_16MidiUsbTransportEED1Ev
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:113    .rodata.main.str1.4:0000000000000000 $d
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:129    .text.startup.main:0000000000000000 $t
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:136    .text.startup.main:0000000000000000 main
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:418    .text.startup.main:00000000000000b0 $d
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:692    .bss.midi:0000000000000000 midi
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:436    .text.startup._GLOBAL__sub_I_hw:0000000000000000 $t
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:442    .text.startup._GLOBAL__sub_I_hw:0000000000000000 _GLOBAL__sub_I_hw
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:665    .text.startup._GLOBAL__sub_I_hw:000000000000004c $d
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:677    .init_array:0000000000000000 $d
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:686    .bss.hw:0000000000000000 hw
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:682    .bss.hw:0000000000000000 $d
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:689    .bss.midi:0000000000000000 $d
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:695    .rodata._ZN5daisy4seedL2D0E:0000000000000000 $d
+/var/folders/3j/b_n5rprd12l_m65s7lnm5vx00000gn/T//cciyPxez.s:699    .rodata._ZN5daisy4seedL2D0E:0000000000000000 _ZN5daisy4seedL2D0E
                            .group:0000000000000000 _ZN5daisy9DaisySeedD5Ev
                            .group:0000000000000000 _ZN5daisy11MidiHandlerINS_16MidiUsbTransportEED5Ev
 
@@ -2876,9 +2857,9 @@ _ZN5daisy16MidiUsbTransport4InitENS0_6ConfigE
 _ZN5daisy10MidiParser5ResetEv
 _ZN5daisy9DaisySeed6SetLedEb
 _ZN5daisy4GPIO4InitENS_3PinENS0_4ModeENS0_4PullENS0_5SpeedE
-_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
-_ZN5daisy16MidiUsbTransport2TxEPhj
-_ZN5daisy9DaisySeed7DelayMsEj
 _ZN5daisy4GPIO4ReadEv
+_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
+_ZN5daisy9DaisySeed7DelayMsEj
+_ZN5daisy16MidiUsbTransport2TxEPhj
 __aeabi_atexit
 __dso_handle
