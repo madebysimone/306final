@@ -3,6 +3,7 @@ TARGET = MIDIController
 
 # Sources
 CPP_SOURCES = MIDIController.cpp
+# CPP_SOURCES = buttonTest.cpp
 
 # Library Locations
 LIBDAISY_DIR = ../../libDaisy
