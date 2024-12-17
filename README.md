@@ -1,20 +1,6 @@
-# 3D Midi Controller Ultra Max Pro
+# Daisy Seed: A Better Microcontroller
+Please refer to the web page for all documentation regarding this project
 
 
-## Author
-
-Simone & Kyle
-
-## Description
-
-Turns Daisy Seed into nuclear football
-
-<!-- [Source Code](https://github.com/electro-smith/DaisyExamples/tree/master/seed/Button) -->
-
-## Breadboard (sike i'm not using that)
-
-<img src="resources/simsim.JPG" style="width: 100%;"/>
-
-<!-- ## Schematic   -->
-<!-- 
-<img src="https://raw.githubusercontent.com/electro-smith/DaisyExamples/master/seed/Button/resources/Button_schem.png" alt="Button_schem.png" style="width: 100%;"/> -->
+---
+© 2024 Daisy Seed: A Better Microcontroller by Simone Polidori & Kyle Balian

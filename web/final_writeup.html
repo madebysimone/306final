@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisy Seed Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ccc;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a.active {
+            color: #4CAF50;
+        }
+        nav ul li a:hover {
+            color: #fff;
+        }
+        .spacer {
+            height: 80px; /* Creates space between header and content */
+        }
+        .container {
+            width: 80%;
+            margin: 100px auto 50px auto; /* Added top padding */
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #222;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+        footer span {
+            font-weight: bold;
+        }
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+        /* I2C Superscript Style */
+        .i2c-sup {
+            vertical-align: super;
+            font-size: 0.75em;
+        }
+        /* Content Fade Animation */
+        .fade-content {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .fade-content.show {
+            opacity: 1;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.container');
+            const links = document.querySelectorAll('nav ul li a');
+
+            function showSection(id) {
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                    section.classList.remove('show');
+                    if (section.id === id) {
+                        section.classList.add('active');
+                        setTimeout(() => section.classList.add('show'), 50); // Adds delay for fade-in effect
+                    }
+                });
+                links.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('data-target') === id) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            links.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const target = e.target.getAttribute('data-target');
+                    showSection(target);
+                });
+            });
+
+            // Show the first section by default
+            showSection('home');
+
+            // Set dynamic year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+    </script>
+</head>
+<!-- <body>
+    <header>
+        <h1>Daisy Seed: A Better Microcontroller</h1>
+        <nav>
+            <ul>
+                <li><a data-target="home" class="active">Home</a></li>
+                <li><a data-target="how_it_works">How It Works</a></li>
+                <li><a data-target="interface">Interface</a></li>
+                <li><a data-target="challenges">Challenges</a></li>
+                <li><a data-target="improvements">Future Improvements</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="spacer"></div>
+    <div id="home" class="container fade-content active">
+        <h2>What We’re Showing You</h2>
+        <p>
+            We wanted to show that using a Daisy Seed to interface with MIDI was much better than using an Arduino,
+            due to the Daisy Seed being able to read multiple inputs simultaneously.
+        </p>
+        <p>
+            We succeeded in that core regard.
+        </p>
+        <h2>Areas of Interest</h2>
+        <ul>
+            <li>Parameter Curve Adjustment</li>
+            <li>Multiple parameters mapped to single sensor</li>
+            <li>Multiple sensors mapped to a single parameter</li>
+            <li>Tactile Interface to encourage creativity</li>
+        </ul>
+        <h2>Demo Video</h2>
+        <iframe src="https://drive.google.com/file/d/1peAzsOWRJuQ2ZVUztB4XhrCPTeQ8qRLw/preview" width="980" height="520" allow="autoplay"></iframe>
+    </div>
+    <div id="how_it_works" class="container fade-content">
+        <h2>How It Works</h2>
+        <p>
+            Analogue devices tie their grounds to an analogue GND rail (AGND), digital ones to DGND. Devices are connected to their respective rails.
+        </p>
+        <p>
+            Sense/wiper lines are connected to analogue ADC pins, while digital device data lines are connected to corresponding pins on the Daisy Seed. Pin modes are set during device initialization.
+        </p>
+        <p>
+            The device is initialized as a MIDI controller. Values read in are mapped between 0-127, and MIDI messages are sent as byte arrays.
+        </p>
+        <pre>
+uint8_t cc_msg[3] = {0xB0, CC_number, value_to_send_between_0_and_127};
+        </pre>
+        <p>Example definitions for JUN-6V VST:</p>
+        <pre>
+#define JUNO_DCO_LFO 77
+#define JUNO_ATTACK 73
+#define JUNO_DECAY 75
+#define JUNO_SUSTAIN 76
+#define JUNO_RELEASE 72
+#define JUNO_FILTER_CUTOFF 74
+#define JUNO_UNISON 93
+#define JUNO_CHORUS1 80
+#define JUNO_REVERB_DECAY 91
+#define JUNO_REVERB_LEVEL 81
+        </pre>
+    </div>
+    <div id="interface" class="container fade-content">
+        <h2>Our Interface</h2>
+        <p>
+            A custom physical interface was created for parameter control.
+        </p>
+        <p>
+            It features various controls for parameters such as random seed generation, DCO LFO, unison, reverb decay, ADSR, and VCF frequency.
+        </p>
+        <img src="interface_image.jpg" alt="Custom Interface" style="width:100%; height:auto;">
+    </div>
+    <div id="challenges" class="container fade-content">
+        <h2>Challenges</h2>
+        <p>
+            <strong>Accelerometer Issue:</strong> I<span class="i2c-sup">2</span>C was not functioning as expected. No documented solutions were found online.
+        </p>
+        <p>
+            <strong>C++ Library Documentation:</strong> Poor documentation made the development process tedious.
+        </p>
+        <p>
+            <strong>Device Code Updates:</strong> DFU mode button presses often failed, loosening components.
+        </p>
+    </div>
+    <div id="improvements" class="container fade-content">
+        <h2>Future Improvements</h2>
+        <ul>
+            <li>Live parameter re-mapping for flexibility and creative possibilities.</li>
+            <li>Printing a PCB for better-quality connections.</li>
+            <li>Using CNC machining or 3D printing for case construction.</li>
+            <li>Resolving I<span class="i2c-sup">2</span>C communication issues with the Daisy Seed.</li>
+        </ul>
+    </div>
+    <footer>
+        &copy; <span id="year"></span> Daisy Seed: A Better Microcontroller by Simone Polidori & Kyle Balian
+    </footer>
+</body> -->
+
+
+<body>
+    <header>
+        <h1>Daisy Seed: A Better Microcontroller</h1>
+        <nav>
+            <ul>
+                <li><a data-target="home" class="active">Home</a></li>
+                <li><a data-target="how_it_works">How It Works</a></li>
+                <li><a data-target="interface">Interface</a></li>
+                <li><a data-target="challenges">Challenges</a></li>
+                <li><a data-target="improvements">Future Improvements</a></li>
+                <li><a data-target="conclusion">Conclusion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="spacer"></div>
+    <div id="home" class="container fade-content active">
+        <!-- <h2>What We’re Showing You</h2> -->
+        <p>
+            We wanted to show that using a Daisy Seed to interface with MIDI was much better than using an Arduino,
+            due to the Daisy Seed being able to read multiple inputs simultaneously, with the ability to have parameters be virtually dependent on one another.
+            <br><br>
+            <div style="text-align: center;">
+                <img src="interface.jpeg" style="width:40%; height:auto;">
+            </div>
+
+        </p>
+        <h2>Demo Video</h2>
+        <iframe src="https://drive.google.com/file/d/1peAzsOWRJuQ2ZVUztB4XhrCPTeQ8qRLw/preview" width="980" height="520" allow="autoplay"></iframe>
+        <h2>Areas of Interest</h2>
+        <ul>
+            <li>Parameter curve adjustment</li>
+            <li>Multiple parameters mapped to single sensor</li>
+            <li>Multiple sensors mapped to a single parameter</li>
+            <li>Tactile Interface to encourage creativity</li>
+            <li>(Goal on a more zoomed-out level) test viability of using this microcontroller in the context of MUMT 306, rather than the Arduino Uno.</li>
+        </ul>
+    </div>
+    <div id="how_it_works" class="container fade-content">
+        <h2>How It Works</h2>
+        <ul>
+        <li>
+            Analogue devices tie their grounds to an analogue GND rail (AGND), digital ones to DGND. VCC rails are also separated between analogue and digital rails. Devices are connected each respective one as well.
+        </li>
+        <li>
+            Sense/wiper lines are connected to analogue ADC pins, while digital device data lines are connected to corresponding pins on the Daisy Seed. 
+        </li>
+        <br>
+        <i><strong>Here is a pinout diagram for the Daisy Seed showing the pins we used in black text:</strong></i>
+        <div style="text-align: center;">
+            <img src="Pinout.jpg" style="width:80%; height:auto;" alt="Here is a pinout diagram for the Daisy Seed showing the pins we used in black text:">
+        </div>
+        <li>    
+            Pin modes are set in the device initialization part of code. The Daisy Seed also features internal pull-up resistors which is helpful for the way we had our buttons wired.
+        </li>
+        <li>
+            The device is initialized as a MIDI controller, which is how we want it to be presented to the host computer. 
+        </li>
+        <li>Once values are read in they are mapped to integers of values between 0-127</li>
+        <li>A MIDI message is constructed as a byte array of size 3. E.g.</li>
+        <pre>uint8_t cc_msg[3] = {0xB0, CC_number, value_to_send_between_0_and_127};</pre>
+        <ul>
+            <li>For ease of legibility in the code, CC numbers are defined at the top of the file in the following manner:</li>
+        
+
+        <pre>
+#define JUNO_DCO_LFO 77
+#define JUNO_DCO_SUB_LEVEL 85
+#define JUNO_DCO_SUB_ON 82
+#define JUNO_ATTACK 73
+#define JUNO_DECAY 75
+#define JUNO_SUSTAIN 76
+#define JUNO_RELEASE 72
+#define JUNO_FILTER_CUTOFF 74
+#define JUNO_UNISON 93
+#define JUNO_CHORUS1 80
+#define JUNO_REVERB_DECAY 91
+#define JUNO_REVERB_LEVEL 81</pre>
+
+        <li>
+            <i>Note:</i> Some of these CC values are not the default loaded ones in the VST. Due to the limit of externally supported CC values in the VST, some unused parameters were changed for ones we wanted to use in the scope of this project.
+        </li>
+    </ul>
+        <li>The MIDI message is sent: <pre>midi.SendMessage(cc_msg, sizeof(cc_msg));</pre></li>
+
+    </ul>
+    </div>
+    <div id="interface" class="container fade-content">
+        <h2>Our Interface</h2>
+        <p>
+            A custom physical interface was created for parameter control.
+       
+            <div style="text-align: center;">
+                <img src="overview.jpg" style="width:60%; height:auto;">
+            </div>
+         </p>
+        <p>
+            To be used in conjunction with the Arturia JUN-6V VST:
+            <div style="text-align: center;">
+                <img src="jun-6v.png" style="width:60%; height:auto;">
+            </div>
+        </p>
+        <p>
+            It features various controls for parameters such as random seed generation, DCO LFO, unison, reverb decay, ADSR, and VCF frequency.
+        </p>
+        <p>
+            To be used in conjunction with the Arturia JUN-6V VST. Although it could very easily be used with any other VST or even to interact with features within one's DAW.
+        </p>
+    </div>
+    <div id="challenges" class="container fade-content">
+        <h2>Challenges</h2>
+        <ol>
+            <li>
+            <strong>Accelerometer Issue:</strong> I<sup>2</sup>C was not functioning as expected. Basic I<sup>2</sup>C implementations were not available to guide us.
+            </li>
+            <li>
+            <strong>C++ Library Documentation:</strong> Poor documentation made the development process tedious.
+            </li>
+            <li>
+            <strong>Device Code Updates:</strong> DFU mode button presses often failed, loosening components. We also could not find others posting solutions to similar issues on the web.
+            </li>
+        </ol>
+        Despite challenges, soldering components and coding logic for parameters went smoothly.
+            
+        
+    </div>
+    <div id="improvements" class="container fade-content">
+        <h2>Future Improvements</h2>
+        <ul>
+            <li>Live parameter re-mapping:</li>
+            <ul>
+                <li>The ability to enter a “re-mapping mode” to change which physical parameters depend on which. In the context of this project, this is seen with some knobs being mapped to the curve of another fader level. In one instance the curve is mapped to two virtual parameters at once as seen in the reverb section in the VST.</li>
+                <li>The number of parameters that can be mapped to and on-to is limited by the number of physical inputs on the device and the number CC messages supported by MIDI (128). This can give almost virtually endless mapping possibilities, enabling very creative, expressive and even organic performances if so desired. Another way to view this would be to think of these dependencies defined in a matrix of physical input parameters vs CC values (0-127)</li>
+            </ul>
+            <li>Printing a PCB for better-quality connections.</li>
+            <li>Using CNC machining to cut slots and holes (or 3D printing the case). Here are some images of us cutting out holes and slots in the faceplate of our project box to mount the inputs to:</li>
+            <div style="display: flex; justify-content: center; gap: 20px; padding-top: 25px; padding-bottom: 25px;">
+                <img src="dremmel.jpg" style="width:40%; height:auto;"/>
+                <img src="sink.jpg" style="width:40%; height:auto;"/>
+            </div>
+            <li>Resolving I<sup>2</sup>C communication issues with the Daisy Seed platform.</li>
+            <li>Purchasing an ST-Link to remotely place the device in DFU mode.</li>
+        </ul>
+    </div>
+    <div id="conclusion" class="container fade-content">
+        <h2>Conclusion</h2>
+        <p>
+            The Daisy Seed shines bright in terms of its power and features when compared to other microcontrollers on the market but also comes with it's set of challenges.            
+        </p>
+        <p>
+            For the scope of this course, we would say that this microcontroller is most definitely a viable option instead of the Arduino Uno. Once some of the issues with documentations are sorted / solutions are brute forced with regards to digital communication with I2C, we think it will be a great option with more power and possibilities than other solutions. Considering people in MUMT 306 are also going to be taking MUMT 307, where the Daisy Seed is required it might be more economical and streamline the tools students need to be familiar with in order to complete their minors in MST.
+        </p>
+    </div>
+    <footer>&copy; <span id="year"></span> Daisy Seed: A Better Microcontroller by Simone Polidori & Kyle Balian</footer>
+</body>
+
+
+
+</html>
